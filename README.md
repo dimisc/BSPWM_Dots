@@ -3,16 +3,16 @@ Dotfiles for BSPWM
 
 *** Instructions: ***
 
-1)  Minimal Arch Install (Grub, Pipewire & NetworkManager. Extra packages: git nano)
+## 1)  Minimal Arch Install (Grub, Pipewire & NetworkManager. Extra packages: git nano)
 
-2)  Install yay
+## 2)  Install yay
     ''' git clone https://aur.archlinux.org/yay.git
         cd yay
         makepkg -si '''
 
-3)  Clone the BSPWM_Dots repo
+## 3)  Clone the BSPWM_Dots repo
 
-4)  Install AUR & Pacman packages (optional: extra)
+## 4)  Install AUR & Pacman packages (optional: extra)
     ''' sudo pacman -S $(cat PacmanPackages.txt)
         yay -S $(cat AURPackages.txt)
         yay -S $(cat ExtraPackages.txt)
