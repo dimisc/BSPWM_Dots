@@ -1,0 +1,124 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (B8=highestModSeq)(B9=imapFlags)(BA=highestRecordedUID)
+  (BB=ns:msg:db:row:scope:pending:all)(BC=ns:msg:db:table:kind:pending)
+  (BD=dateReceived)(BE=ProtoThreadFlags)
+  (BF=dobayes.mailnews@mozilla.org#junk.empty)
+  (C0=dobayes.mailnews@mozilla.org#junk)(C1=folderName)(C2=keywords)
+  (C3=imageSize)(C4=junkscore)(C5=sender_name)(C6=replyTo)(C7=storeToken)
+  (C8=prevkeywords)(C9=pseudoHdr)(CA=ns:msg:db:row:scope:ops:all)
+  (CB=ns:msg:db:table:kind:ops)(CC=op)(CD=msgKey)(CE=opFlags)
+  (CF=newFlags)(D0=srcFolderURI)(D1=srcMsgKey)(D2=customSortCol)
+  (D3=gloda-id)(D4=gloda-dirty)(D5=notAPhishMessage)(D6=preview)
+  (80=ns:msg:db:row:scope:msgs:all)(81=subject)(82=sender)(83=message-id)
+  (84=references)(85=recipients)(86=date)(87=size)(88=flags)(89=priority)
+  (8A=label)(8B=numLines)(8C=ccList)(8D=bccList)(8E=msgThreadId)
+  (8F=threadId)(90=threadFlags)(91=threadNewestMsgDate)(92=children)
+  (93=unreadChildren)(94=threadSubject)(95=msgCharSet)
+  (96=ns:msg:db:table:kind:msgs)(97=ns:msg:db:table:kind:thread)
+  (98=ns:msg:db:table:kind:allthreads)
+  (99=ns:msg:db:row:scope:threads:all)(9A=threadParent)(9B=threadRoot)
+  (9C=msgOffset)(9D=offlineMsgSize)
+  (9E=ns:msg:db:row:scope:dbfolderinfo:all)
+  (9F=ns:msg:db:table:kind:dbfolderinfo)(A0=numMsgs)(A1=numNewMsgs)
+  (A2=folderSize)(A3=expungedBytes)(A4=folderDate)(A5=highWaterKey)
+  (A6=mailboxName)(A7=UIDValidity)(A8=totPendingMsgs)
+  (A9=unreadPendingMsgs)(AA=expiredMark)(AB=version)(AC=forceReparse)
+  (AD=fixedBadRefThreading)(AE=onlineName)(AF=indexingPriority)
+  (B0=useServerRetention)(B1=viewFlags)(B2=sortType)(B3=sortOrder)
+  (B4=MRUTime)(B5=viewType)(B6=sortColumns)(B7=columnStates)>
+<(C0=1a4d)(81=0)>[4:m(^9B^C0)(^8F^C0)(^91=0)(^90=0)(^92=0)]
+<(D7=1a4e)>[5:m(^9B^D7)(^8F^D7)(^91=0)(^90=0)(^92=0)]
+[1A4D:^80]
+<(B2=Security alert for dimitrischr0@gmail.com)>
+[1A4D:^99(^94^B2)]
+
+<(80=1)(82=Deleted)(C9=82114)(84=-1)(85=12)(86=2)(DC=1713718747)(AA=$122)
+  (89
+    ={"selectCol":{"visible":false,"ordinal":"1"},"threadCol":{"visible":false\
+,"ordinal":"3"},"flaggedCol":{"visible":false,"ordinal":"5"},"attachmentCol":{\
+"visible":true,"ordinal":"7"},"subjectCol":{"visible":true,"ordinal":"9"},"unr\
+eadButtonColHeader":{"visible":true,"ordinal":"11"},"senderCol":{"visible":fal\
+se,"ordinal":"13"},"recipientCol":{"visible":false,"ordinal":"15"},"correspond\
+entCol":{"visible":true,"ordinal":"17"},"junkStatusCol":{"visible":true,"ordin\
+al":"19"},"receivedCol":{"visible":false,"ordinal":"21"},"dateCol":{"visible":\
+true,"ordinal":"23"},"statusCol":{"visible":false,"ordinal":"25"},"sizeCol":{"\
+visible":true,"ordinal":"27"},"tagsCol":{"visible":false,"ordinal":"29"},"acco\
+untCol":{"visible":false,"ordinal":"31"},"priorityCol":{"visible":false,"ordin\
+al":"33"},"unreadCol":{"visible":false,"ordinal":"35"},"totalCol":{"visible":f\
+alse,"ordinal":"37"},"locationCol":{"visible":false,"ordinal":"39"},"idCol":{"\
+visible":false,"ordinal":"41"},"deleteCol":{"visible":false,"ordinal":"43"}})
+  (8A=2000)(8B=c)(AD=1a4c)(DB=5b09d)>
+{1:^9E {(k^9F:c)(s=9)} 
+  [1(^AB=1)(^AC=0)(^AD=1)(^AE^82)(^88^C9)(^A6^82)(^AF=-1)(^B0=1)(^B1=1)
+    (^B2=12)(^B3=2)(^B4^DC)(^B5=0)(^B6^AA)(^B7^89)(^B8=0)(^B9^8A)(^A7=c)
+    (^BA^AD)(^A0=0)(^A5^D7)(^A8=1)(^A3^DB)]}
+
+<(B3=a20KAQcw6yR3jnbTRpxC6Q@notifications.google.com)(B0
+    =Google <no-reply@accounts.google.com>)(B1=dimitris@outlook.com)
+  (B4=64b3a1fe)(BC
+    =This is a copy of a security alert sent to dimitrischr0@gmail.com. dimitr\
+is@outlook.com is the recovery email for this account. If you don't recognize \
+this account, remove <https://accounts.google.com/AccountDisavow?adt=AOX8kiou_\
+czbLLihHEbgaW1OPixOmAX)(BD=65)(BE=0|Google)(BF=)(BA=47fa)(C1=2a07c)
+  (C6=80)(C2=172156)(CD=4E.29.37883.CB545266@kn.mta1vrest.cc.prd.sparkpost)
+  (CB="Cloudflare" <noreply@notify.cloudflare.com>)(CC
+    =Login code for radarr.dimitris.cloud)(CE=662545bc)(D1=5|Cloudflare)
+  (D6
+    =Hi, Click the link below to finish your login to radarr.dimitris.cloud: h\
+ttps://dimis.cloudflareaccess.com/cdn-cgi/access/callback?nonce=PMeeYMMbx2nxno\
+q9Ng0nSIxm7gGyMTcxMzcxODcxNQ&code=690555&secret=UCzG8CaK2kplCPoEkpKccHnrrbjcig\
+ZF You can also cop)(CF=27ab)(D9=2e876)(D8=190582)>
+{1:^BB {(k^BC:c)(s=9)} 
+  [1(^83^B3)(^82^B0)(^85^B1)(^81^B2)(^BD^B4)(^86^B4)(^D6^BC)(^D3=65)
+    (^C5^BE)(^C8=)(^D4=1)(^9D^BA)(^9C^C1)(^88=80)(^C7^C2)(^89=1)]
+  [2(^83^CD)(^82^CB)(^85^B1)(^81^CC)(^BD^CE)(^86^CE)(^C5^D1)(^D6^D6)
+    (^D4=1)(^C8=)(^9D^CF)(^9C^D9)(^88=80)(^C7^D8)(^89=1)]}
+[1A4D:^CA]
+
+@$${A{@
+<(DE=1e70)>[-6:m(^9B^DE)(^8F^DE)(^91^CE)(^90=0)(^92=1)]
+
+<(AF=81)(DD=b0b7)(B6=ffffffff)>
+{-1:^80 {(k^96:c)(s=9)} 
+  [-1E70(^88=81)(^82^CB)(^85^B1)(^81^CC)(^83^CD)(^BD^CE)(^86^CE)(^C5^D1)
+    (^D6^D6)(^D4=1)(^C8=)(^9D^CF)(^9C^D9)(^C7^D8)(^89=1)(^87^DD)(^9A^B6)
+    (^8E^DE)(^BE=0)]}
+{-1E70:^80 {(k^97:c)(s=9)6:m } 1E70 }
+{-FFFFFFFD:^99 {(k^98:c)(s=9)} [-1E70(^94^CC)]}
+[-1:^9E(^AB=1)(^AC=0)(^AD=1)(^AE^82)(^88^C9)(^A6^82)(^AF=-1)(^B0=1)
+    (^B1=1)(^B2=12)(^B3=2)(^B4^DC)(^B5=0)(^B6^AA)(^B7^89)(^B8=0)(^B9^8A)
+    (^A7=c)(^BA^DE)(^A0=1)(^A5^DE)(^A8=0)(^A3^DB)]
+{-1:^BB {(k^BC:c)(s=9)} 1 }
+[-2:^BB]
+@$$}A}@
+
+@$${B{@
+[-6:m(^9B^DE)(^8F^DE)(^91=0)(^90=0)(^92=0)]
+{-1:^80 {(k^96:c)(s=9)} }
+{-1E70:^80 {(k^97:c)(s=9)6:m } }[-1E70:^80]
+{-FFFFFFFD:^99 {(k^98:c)(s=9)} }
+<(DF=5d848)>[-1:^9E(^AB=1)(^AC=0)(^AD=1)(^AE^82)(^88^C9)(^A6^82)(^AF=-1)
+    (^B0=1)(^B1=1)(^B2=12)(^B3=2)(^B4^DC)(^B5=0)(^B6^AA)(^B7^89)(^B8=0)
+    (^B9^8A)(^A7=c)(^BA^DE)(^A0=0)(^A5^DE)(^A8=0)(^A3^DF)]
+@$$}B}@
+
+@$${C{@
+@$$}C}@
+
+@$${D{@
+@$$}D}@
+
+@$${E{@
+@$$}E}@
+
+@$${F{@
+@$$}F}@
+
+@$${11{@
+<(E0=1713851646)>[1:^9E(^B4^E0)]
+@$$}11}@
+
+@$${12{@
+{-1:^CA {(k^CB:c)(s=9)} }
+@$$}12}@
