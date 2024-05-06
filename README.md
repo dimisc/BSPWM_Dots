@@ -3,7 +3,7 @@ Dotfiles for BSPWM
 
 *** INSTRUCTIONS: ***
 
-## 1)  Minimal Arch Install (Grub, Pipewire & NetworkManager. Extra packages: git nano)
+## 1)  Minimal Arch Install (Grub, Pipewire, NetworkManager. Packages: git)
 
 ## 2)  Install yay
         git clone https://aur.archlinux.org/yay.git
