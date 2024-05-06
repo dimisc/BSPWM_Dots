@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+## Script to Lock the session by xfce4-power-manager
+
+betterlockscreen --lock
