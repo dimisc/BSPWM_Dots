@@ -37,23 +37,27 @@ Dotfiles for BSPWM
 ## 11) Copy #6 ETC configurations
         sudo cp -R /BSPWM_Dots/6. ETC/* /etc
 
-## 12) Copy #7 Home Hidden Files
+## 12) Install Oh-my-zsh
+        sudo pacman -S zsh
+        sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+
+## 13) Copy #7 Home Hidden Files
         cp -R /BSPWM_Dots/7. Home Hidden Files/.* /home/user/
 
-## 13) Copy #8 Root config files
+## 14) Copy #8 Root config files
         sudo cp -R /BSPWM_Dots/8. Root/Config/* /home/root
 
-## 14) Copy #9 Pictures (needed for wallpaper & screen lock)
+## 15) Copy #9 Pictures (needed for wallpaper & screen lock)
         cp -R /BSPWM_Dots/9. Pictures/* /home/user/Pictures
 
-## 15) Post install:
+## 16) Post install:
         rm -rf /home/user/yay
         rm -rf /home/user/BSPWM_Dots
         sudo chown user:user /home/user/
 
         sudo systemctl enable bluetooth
 
-## 16) Install a Login Manager (SDDM or ly for minimal)
+## 17) Install a Login Manager (SDDM or ly for minimal)
         sudo pacman -S ly
         sudo systemctl enable ly
 
