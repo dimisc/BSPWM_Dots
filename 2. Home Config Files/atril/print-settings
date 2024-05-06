@@ -1,0 +1,37 @@
+[Print Settings]
+atril-print-setting-page-autorotate=true
+default-source=Manual
+atril-print-setting-page-size=false
+media-type=None
+cups-MediaType=None
+cups-job-priority=50
+cups-TonerSaveMode=Standard
+cups-number-up=1
+cups-job-sheets=none,none
+cover-before=none
+cups-JCLSkipBlankPages=False
+cups-JCLEdgeEnhance=Normal
+atril-print-setting-page-scale=1
+cups-Quality=1200dpi
+print-at-time=
+cups-secBrightness=20
+cover-after=none
+print-at=now
+printer=WiredPrint
+cups-secContrast=70
+cups-InputSlot=Manual
+
+cups-OutputBin=Top
+output-bin=Top
+cups-cupsPrintQuality=Normal
+
+[Page Setup]
+PPDName=A4
+DisplayName=A4
+Width=210
+Height=297
+MarginTop=6.3499999999999996
+MarginBottom=14.224
+MarginLeft=6.3499999999999996
+MarginRight=6.3499999999999996
+Orientation=portrait

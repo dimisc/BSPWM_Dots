@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# bspwm directory
+DIR="$HOME/.config/bspwm"
+
+# Kill Running XFCE Notify Daemon
+killall xfce4-notifyd
+
+# Launch dunst daemon
+if [[ `pidof dunst` ]]; then
+	pkill dunst
+fi
+
+dunst -config "$DIR"/dunstrc &

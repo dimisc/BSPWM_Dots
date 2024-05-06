@@ -1,0 +1,9 @@
+file:///home/dimitris/Documents
+file:///home/dimitris/Music
+file:///home/dimitris/Pictures
+file:///home/dimitris/Videos
+file:///home/dimitris/Downloads
+file:///mnt/LinuxData
+smb://192.168.1.22/serverdata/ BackupServer
+smb://192.168.50.15/piserver/ DeskPiServer
+smb://192.168.50.20/homenas/ HomeNAS
