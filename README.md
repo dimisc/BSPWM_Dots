@@ -53,7 +53,7 @@ Dotfiles for BSPWM
 ## 16) Post install:
         rm -rf /home/user/yay
         rm -rf /home/user/BSPWM_Dots
-        sudo chown user:user /home/user/
+        sudo chown -R user:user /home/user/
 
         sudo systemctl enable bluetooth
 
