@@ -1,0 +1,20 @@
+caprine (AUR)
+clonezilla
+cups
+discord
+easytag
+gimp
+gparted
+heroic-games-launcher-bin (AUR)
+hexchat
+inkscape
+keeweb-desktop-bin (AUR)
+lampe (AUR)
+localsend-bin (AUR)
+onlyoffice-bin (AUR)
+steam
+veracrypt
+wine
+winetricks
+wireguard-tools
+yt-dlp

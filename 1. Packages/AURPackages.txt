@@ -1,0 +1,8 @@
+betterlockscreen
+networkmanager-dmenu-git
+picom-git
+xfce-polkit
+i3lock-color
+qogir-icon-theme
+light
+ueberzugpp
