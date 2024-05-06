@@ -1,0 +1,356 @@
+From - Sun Feb 25 19:34:34 2024
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: dimitrischr0@gmail.com
+Received: by 2002:a2e:868d:0:b0:2cf:2b76:607d with SMTP id l13csp668829lji;
+        Sun, 25 Feb 2024 09:34:27 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IFNapo/X5FMAyOrSLJhZ3I4MyZj4gA27zxvHbfrIpqukH1RAX4wiUxwa/JEtLQxQ8Yfnjxp
+X-Received: by 2002:aa7:df93:0:b0:565:e294:5119 with SMTP id b19-20020aa7df93000000b00565e2945119mr797708edy.18.1708882467621;
+        Sun, 25 Feb 2024 09:34:27 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1708882467; cv=none;
+        d=google.com; s=arc-20160816;
+        b=lZenTPOZC9kkzDNruorXpIfpZuKKQvzsyIwB81vz8RWykvZtP3tuY18fu8XwDW/JUC
+         swSNAXYSsvKCr4/WVUa40M6wUIBvyA67QuAaQHd5zoF0bP58oOAeqZGkKmz/wcxlRT/r
+         N9/LC9LVNWKKwZ0JL/lckghYq5FuIU1qbflTUPb9HfzqD0D9uDeYIuXPclZ2+fAc1232
+         IYh1fxJ2oxLT59pvcrmnkGrhg9AutyXtLXfRS9QaBtrOCeidwwAF1uZrOnDsXw++tsxb
+         /7hu2jO9MFhEnfIn91UbCBuLqXcRw/5C4AKY35uK9omwt95dvv8yaDZP5S7uPTY8sqZs
+         VT9Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:mime-version:bimi-selector:list-unsubscribe:errors-to
+         :reply-to:from:subject:to:date:dkim-signature;
+        bh=jDo/uX4FGglApfql4WuCcplx+bT2L6AopJtiVbBogQc=;
+        fh=EDj11HjrUBAkxUuxlUOAICp2GSVzBy1P/nhA3ZdIF4g=;
+        b=gzaJg/0c82z5XV9zTjLX0GYB4QpyQtx6jVkEkRwtE3ye/DdwN/TQYuCB/P5jIMKfVA
+         u5s+eO/r+w8MPjtStNQQyIcJcaDyh2DmABln7GMjDtTeqr0l6/OHLh6jsLJGnfLFaVvl
+         rYzfBFBWKw2wH5w6PpX1yJtBtj6M2CVHOw5mWx1u81udvD/hYiWl6ybROkLKjcC9x8Po
+         /B1/81UzcwQeyAAF4aAvvabW7yjN53/P20gBQ9KMArGhEv3z8LAd7ADHN+ic92+1+G7K
+         Wr9QwI45E01D5Ko4n2ksEjpF5YTIFfbFB65yi146eItzON7nOxOjB2NsYRIEKNdYlEKo
+         /Twg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@facebookmail.com header.s=s1024-2013-q3 header.b=EqY6aYXT;
+       spf=pass (google.com: domain of security@facebookmail.com designates 66.220.155.140 as permitted sender) smtp.mailfrom=security@facebookmail.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=facebookmail.com
+Return-Path: <security@facebookmail.com>
+Received: from 66-220-155-140.mail-mail.facebook.com (66-220-155-140.mail-mail.facebook.com. [66.220.155.140])
+        by mx.google.com with ESMTPS id c19-20020aa7c753000000b00563ce99a18dsi1378270eds.350.2024.02.25.09.34.27
+        for <dimitrischr0@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sun, 25 Feb 2024 09:34:27 -0800 (PST)
+Received-SPF: pass (google.com: domain of security@facebookmail.com designates 66.220.155.140 as permitted sender) client-ip=66.220.155.140;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@facebookmail.com header.s=s1024-2013-q3 header.b=EqY6aYXT;
+       spf=pass (google.com: domain of security@facebookmail.com designates 66.220.155.140 as permitted sender) smtp.mailfrom=security@facebookmail.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=facebookmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=facebookmail.com;
+	s=s1024-2013-q3; t=1708882464;
+	bh=jDo/uX4FGglApfql4WuCcplx+bT2L6AopJtiVbBogQc=;
+	h=Date:To:Subject:From:MIME-Version:Content-Type;
+	b=EqY6aYXT3Ngcc5vESoJsKL3Tw0YoIOhu+qUgNaCRqoUBs/GGrliva+y9Vb3f05AVr
+	 Tsp5xWmmuAMCaJkapkRs+URYHWEgopGBbx2E/fYfMUpFUibpli39bV8nGNDactAQkh
+	 8Y1USSU1yWyCLMqlgwCaXu7yb2/OLeGWEuz1sVkQ=
+X-Facebook: from 2803:6082:c8c4:3a59:ff70:13dc:200:0 ([MTI3LjAuMC4x]) 
+	by www.facebook.com with HTTPS (ZuckMail);
+Date: Sun, 25 Feb 2024 09:34:23 -0800
+To: Dimitris Chrysostomou <dimitrischr0@gmail.com>
+Subject: Login alert for Firefox on Linux
+X-Priority: 3
+X-Mailer: ZuckMail [version 1.00]
+Return-Path: security@facebookmail.com
+From: "Facebook" <security@facebookmail.com>
+Reply-to: noreply <noreply@facebookmail.com>
+Errors-To: security@facebookmail.com
+X-Facebook-Notify: login_alerts_new_device; mailid=U1U61237ea3afa03G4b7641f4G6123833d0fcd5G2bf
+List-Unsubscribe: <https://www.facebook.com/n/?login_alerts%2Fsettings%2F&aref=1708882457066709&medium=email&mid=61237ea3afa03G4b7641f4G6123833d0fcd5G2bf&bcode=2.1708882463.AbwPT8uydNOVoeTROu0&n_m=dimitrischr0%40gmail.com&rms=v2&irms=true>
+BIMI-Selector: v=BIMI1; s=fb2023q1v3;
+X-FACEBOOK-PRIORITY: 0
+X-Auto-Response-Suppress: All
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_d87d5f9d64ea7ed87e6a73ba01c8efb8"
+Message-ID: <1df23b50-d404-11ee-8253-955733f614f9@facebookmail.com>
+
+
+--b1_d87d5f9d64ea7ed87e6a73ba01c8efb8
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Review login
+https://www.facebook.com/n/?login_alerts%2Fstart%2F&fbid=3D102318852694557=
+36&s=3De&aref=3D1708882457066709&medium=3Demail&mid=3D61237ea3afa03G4b7641=
+f4G6123833d0fcd5G2bf&bcode=3D2.1708882463.AbwPT8uydNOVoeTROu0&n_m=3Ddimitr=
+ischr0%40gmail.com&rms=3Dv2&irms=3Dtrue
+
+
+Manage alerts
+https://www.facebook.com/n/?login_alerts%2Fsettings%2F&aref=3D170888245706=
+6709&medium=3Demail&mid=3D61237ea3afa03G4b7641f4G6123833d0fcd5G2bf&bcode=
+=3D2.1708882463.AbwPT8uydNOVoeTROu0&n_m=3Ddimitrischr0%40gmail.com&rms=3Dv=
+2&irms=3Dtrue
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Hi Dimitris,
+
+Hi Dimitris,
+
+We noticed an unusual login from a device or location you don't usually =
+use. Was this you?
+
+New login
+
+February 25, 2024 at 7:34 PM
+
+Near Strovolos, Cyprus
+
+Firefox on Linux
+
+Thanks,
+The Facebook team
+
+
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+This message was sent to dimitrischr0@gmail.com. If you don't want to =
+receive these emails from Meta in the future, please follow the link below =
+to unsubscribe.
+https://www.facebook.com/n/?login_alerts%2Fsettings%2F&aref=3D170888245706=
+6709&medium=3Demail&mid=3D61237ea3afa03G4b7641f4G6123833d0fcd5G2bf&bcode=
+=3D2.1708882463.AbwPT8uydNOVoeTROu0&n_m=3Ddimitrischr0%40gmail.com&rms=3Dv=
+2&irms=3Dtrue
+Meta Platforms Ireland Ltd., Attention: Community Operations, 4 Grand =
+Canal Square, Dublin 2, Ireland
+To help keep your account secure, please don't forward this email. Follow =
+the link below to learn more.
+https://www.facebook.com/email_forward_notice/?mid=3D61237ea3afa03G4b7641f=
+4G6123833d0fcd5G2bf
+
+
+--b1_d87d5f9d64ea7ed87e6a73ba01c8efb8
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional =
+//EN"><html><head><title>Facebook</title><meta http-equiv=3D"Content-Type" =
+content=3D"text/html; charset=3Dutf-8" /><style nonce=3D"lZ4HBsSN">@media =
+all and (max-width: 480px){*[class].ib_t{min-width:100% =
+!important}*[class].ib_row{display:block =
+!important}*[class].ib_ext{display:block !important;padding:10px 0 5px =
+0;vertical-align:top !important;width:100% =
+!important}*[class].ib_img,*[class].ib_mid{vertical-align:top =
+!important}*[class].mb_blk{display:block =
+!important;padding-bottom:10px;width:100% =
+!important}*[class].mb_hide{display:none =
+!important}*[class].mb_inl{display:inline =
+!important}*[class].d_mb_flex{display:block =
+!important}}.d_mb_show{display:none}.d_mb_flex{display:flex}@media only =
+screen and (max-device-width: 480px){.d_mb_hide{display:none =
+!important}.d_mb_show{display:block !important}.d_mb_flex{display:block =
+!important}}.mb_text h1,.mb_text h2,.mb_text h3,.mb_text h4,.mb_text =
+h5,.mb_text h6{line-height:normal}.mb_work_text =
+h1{font-size:18px;line-height:normal;margin-top:4px}.mb_work_text =
+h2,.mb_work_text =
+h3{font-size:16px;line-height:normal;margin-top:4px}.mb_work_text =
+h4,.mb_work_text h5,.mb_work_text =
+h6{font-size:14px;line-height:normal}.mb_work_text =
+a{color:#1270e9}.mb_work_text p{margin-top:4px}</style></head><body =
+style=3D"margin:0;padding:0;" dir=3D"ltr" bgcolor=3D"#ffffff"><table =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" =
+id=3D"email_table" style=3D"border-collapse:collapse;"><tr><td =
+id=3D"email_content" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;background:#ffffff;"><table =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr style=3D""><td height=3D"20" =
+style=3D"line-height:20px;" colspan=3D"3">&nbsp;</td></tr><tr><td =
+height=3D"1" colspan=3D"3" style=3D"line-height:1px;"><span =
+style=3D"color:#FFFFFF;font-size:1px;opacity:0;">=C2=A0 Hi Dimitris, =
+=C2=A0 We noticed an unusual login from a device or location you =
+don&#039;t usually use. Was this you? =C2=A0 New login =C2=A0 =C2=A0 =
+February 25, 2024 at 7:34 PM =C2=A0 =C2=A0 Near Strovolos, Cyprus =C2=A0 =
+=C2=A0 Firefox on Linux =C2=A0</span></td></tr><tr><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr style=3D""><td =
+height=3D"15" style=3D"line-height:15px;" =
+colspan=3D"3">&nbsp;</td></tr><tr><td width=3D"32" align=3D"left" =
+valign=3D"middle" style=3D"height:32;line-height:0px;"><a =
+href=3D"https://www.facebook.com/n/?login_alerts%2Fstart%2F&amp;fbid=3D102=
+31885269455736&amp;s=3De&amp;aref=3D1708882457066709&amp;medium=3Demail&am=
+p;mid=3D61237ea3afa03G4b7641f4G6123833d0fcd5G2bf&amp;bcode=3D2.1708882463.=
+AbwPT8uydNOVoeTROu0&amp;n_m=3Ddimitrischr0%40gmail.com" =
+style=3D"color:#1b74e4;text-decoration:none;"><img width=3D"32" =
+src=3D"https://static.xx.fbcdn.net/rsrc.php/v3/yS/r/ZirYDPWh0YD.png" =
+height=3D"32" style=3D"border:0;" /></a></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+width=3D"100%" style=3D""><a href=3D"https://www.facebook.com/n/?login_ale=
+rts%2Fstart%2F&amp;fbid=3D10231885269455736&amp;s=3De&amp;aref=3D170888245=
+7066709&amp;medium=3Demail&amp;mid=3D61237ea3afa03G4b7641f4G6123833d0fcd5G=
+2bf&amp;bcode=3D2.1708882463.AbwPT8uydNOVoeTROu0&amp;n_m=3Ddimitrischr0%40=
+gmail.com" =
+style=3D"color:#1877f2;text-decoration:none;font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:19p=
+x;line-height:32px;">Login alert</a></td></tr><tr =
+style=3D"border-bottom:solid 1px #e5e5e5;"><td height=3D"15" =
+style=3D"line-height:15px;" colspan=3D"3">&nbsp;</td></tr></table></td><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr style=3D""><td =
+height=3D"28" style=3D"line-height:28px;">&nbsp;</td></tr><tr><td =
+style=3D""><span class=3D"mb_text" style=3D"font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16p=
+x;line-height:21px;font-weight:bold;color:#141823;">Hi =
+Dimitris,</span></td></tr><tr style=3D""><td height=3D"28" =
+style=3D"line-height:28px;">&nbsp;</td></tr><tr><td style=3D""><span =
+class=3D"mb_text" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;col=
+or:#141823;">We noticed an unusual login from a device or location you =
+don&#039;t usually use. Was this you?</span></td></tr><tr style=3D""><td =
+height=3D"28" style=3D"line-height:28px;">&nbsp;</td></tr><tr><td =
+style=3D""><span style=3D"font-size:10px;font-weight:bold;color:#777;">New =
+login</span></td></tr><tr style=3D""><td height=3D"28" =
+style=3D"line-height:28px;">&nbsp;</td></tr><tr><td style=3D""><tr =
+style=3D"border-top:solid 1px #e5e5e5;"><td height=3D"0" =
+style=3D"line-height:0px;">&nbsp;</td></tr></td></tr><tr><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"left" class=3D"ib_t" =
+style=3D"border-collapse:collapse;min-width:420px;"><tr =
+class=3D"ib_row"><td valign=3D"top" =
+style=3D"padding-right:10px;font-size:0px;" class=3D"ib_img"><img =
+width=3D"16px" =
+src=3D"https://static.xx.fbcdn.net/rsrc.php/v3/y_/r/fxDxryThlPo.png" =
+height=3D"16px" style=3D"border:0;" /></td><td width=3D"100%" =
+valign=3D"top" style=3D"padding-right:10px;" class=3D"ib_mid"><span =
+class=3D"mb_text" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;col=
+or:#141823;">February 25, 2024 at 7:34 =
+PM</span></td></tr></table></td></tr><tr style=3D""><td height=3D"28" =
+style=3D"line-height:28px;">&nbsp;</td></tr><tr><td style=3D""><tr =
+style=3D"border-top:solid 1px #e5e5e5;"><td height=3D"0" =
+style=3D"line-height:0px;">&nbsp;</td></tr></td></tr><tr><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"left" class=3D"ib_t" =
+style=3D"border-collapse:collapse;min-width:420px;"><tr =
+class=3D"ib_row"><td valign=3D"top" =
+style=3D"padding-right:10px;font-size:0px;" class=3D"ib_img"><img =
+width=3D"16px" =
+src=3D"https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/HLjP6-RaBz8.png" =
+height=3D"16px" style=3D"border:0;" /></td><td width=3D"100%" =
+valign=3D"top" style=3D"padding-right:10px;" class=3D"ib_mid"><span =
+class=3D"mb_text" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;col=
+or:#141823;">Near Strovolos, Cyprus</span></td></tr></table></td></tr><tr =
+style=3D""><td height=3D"28" =
+style=3D"line-height:28px;">&nbsp;</td></tr><tr><td style=3D""><tr =
+style=3D"border-top:solid 1px #e5e5e5;"><td height=3D"0" =
+style=3D"line-height:0px;">&nbsp;</td></tr></td></tr><tr><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"left" class=3D"ib_t" =
+style=3D"border-collapse:collapse;min-width:420px;"><tr =
+class=3D"ib_row"><td valign=3D"top" =
+style=3D"padding-right:10px;font-size:0px;" class=3D"ib_img"><img =
+width=3D"16px" =
+src=3D"https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/3WDjs9Fu8WU.png" =
+height=3D"16px" style=3D"border:0;" /></td><td width=3D"100%" =
+valign=3D"top" style=3D"padding-right:10px;" class=3D"ib_mid"><span =
+class=3D"mb_text" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;col=
+or:#141823;">Firefox on Linux</span></td></tr></table></td></tr><tr =
+style=3D""><td height=3D"28" =
+style=3D"line-height:28px;">&nbsp;</td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr style=3D""><td =
+height=3D"2" style=3D"line-height:2px;" =
+colspan=3D"3">&nbsp;</td></tr><tr><td class=3D"mb_blk" style=3D""><a =
+href=3D"https://www.facebook.com/n/?login_alerts%2Fstart%2F&amp;fbid=3D102=
+31885269455736&amp;s=3De&amp;aref=3D1708882457066709&amp;medium=3Demail&am=
+p;mid=3D61237ea3afa03G4b7641f4G6123833d0fcd5G2bf&amp;bcode=3D2.1708882463.=
+AbwPT8uydNOVoeTROu0&amp;n_m=3Ddimitrischr0%40gmail.com&amp;rms=3Dv2&amp;ir=
+ms=3Dtrue" style=3D"color:#1b74e4;text-decoration:none;"><table =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D"border-collapse:colla=
+pse;border-radius:6px;text-align:center;display:block;background:#1877f2;p=
+adding:8px 16px 10px 16px;"><a href=3D"https://www.facebook.com/n/?login_a=
+lerts%2Fstart%2F&amp;fbid=3D10231885269455736&amp;s=3De&amp;aref=3D1708882=
+457066709&amp;medium=3Demail&amp;mid=3D61237ea3afa03G4b7641f4G6123833d0fcd=
+5G2bf&amp;bcode=3D2.1708882463.AbwPT8uydNOVoeTROu0&amp;n_m=3Ddimitrischr0%=
+40gmail.com&amp;rms=3Dv2&amp;irms=3Dtrue" =
+style=3D"color:#1b74e4;text-decoration:none;display:block;"><center><font =
+size=3D"3"><span style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;white-space:nowrap;font-weight:bold=
+;vertical-align:middle;color:#ffffff;font-size:14px;line-height:14px;">Rev=
+iew&nbsp;login</span></font></center></a></td></tr></table></a></td><td =
+width=3D"10" style=3D"display:block;width:10px;" =
+class=3D"mb_hide">&nbsp;&nbsp;&nbsp;</td><td class=3D"mb_blk" =
+style=3D""><a href=3D"https://www.facebook.com/n/?login_alerts%2Fsettings%=
+2F&amp;aref=3D1708882457066709&amp;medium=3Demail&amp;mid=3D61237ea3afa03G=
+4b7641f4G6123833d0fcd5G2bf&amp;bcode=3D2.1708882463.AbwPT8uydNOVoeTROu0&am=
+p;n_m=3Ddimitrischr0%40gmail.com&amp;rms=3Dv2&amp;irms=3Dtrue" =
+style=3D"color:#1b74e4;text-decoration:none;"><table border=3D"0" =
+width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D"border-collapse:colla=
+pse;border-radius:6px;text-align:center;display:block;background:#e4e6eb;p=
+adding:8px 16px 10px 16px;"><a href=3D"https://www.facebook.com/n/?login_a=
+lerts%2Fsettings%2F&amp;aref=3D1708882457066709&amp;medium=3Demail&amp;mid=
+=3D61237ea3afa03G4b7641f4G6123833d0fcd5G2bf&amp;bcode=3D2.1708882463.AbwPT=
+8uydNOVoeTROu0&amp;n_m=3Ddimitrischr0%40gmail.com&amp;rms=3Dv2&amp;irms=3D=
+true" =
+style=3D"color:#1b74e4;text-decoration:none;display:block;"><center><font =
+size=3D"3"><span style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;white-space:nowrap;font-weight:bold=
+;vertical-align:middle;color:#050505;font-size:17px;font-size:14px;line-he=
+ight:14px;">Manage&nbsp;alerts</span></font></center></a></td></tr></table=
+></a></td><td width=3D"100%" class=3D"mb_hide" style=3D""></td></tr><tr =
+style=3D""><td height=3D"32" style=3D"line-height:32px;" =
+colspan=3D"3">&nbsp;</td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"left" style=3D"border-collapse:collapse;"><tr =
+style=3D"border-top:solid 1px #e5e5e5;"><td height=3D"19" =
+style=3D"line-height:19px;">&nbsp;</td></tr><tr><td =
+style=3D"font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana=
+,arial,sans-serif;font-size:11px;color:#aaaaaa;line-height:16px;"><table =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td align=3D"center" =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding-bottom:6px;">from</td></tr><tr><td align=3D"center" =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding-top:6px;padding-bottom:6px;"><img width=3D"74" alt=3D"Meta" =
+height=3D"22" src=3D"https://facebook.com/images/email/meta_logo.png" =
+style=3D"border:0;" /></td></tr><tr><td align=3D"center" =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding-top:6px;padding-bottom:6px;">=C2=A9 Facebook. Meta =
+Platforms Ireland Ltd., Attention: Community Operations, 4 Grand Canal =
+Square, Dublin 2, Ireland</td></tr><tr><td align=3D"center" =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding-top:6px;">This message was sent to <a =
+style=3D"color:#1b74e4;text-decoration:none;" href=3D"mailto:dimitrischr0&=
+#064;gmail.com">dimitrischr0&#064;gmail.com</a>. <br />To help keep your =
+account secure, please don&#039;t forward this email. <a =
+style=3D"color:#1b74e4;text-decoration:none;" =
+href=3D"https://www.facebook.com/help/213481848684090/">Learn =
+more</a></td></tr></table><tr style=3D""><td height=3D"10" =
+style=3D"line-height:10px;">&nbsp;</td></tr></td></tr></table></td><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr =
+style=3D""><td height=3D"20" style=3D"line-height:20px;" =
+colspan=3D"3">&nbsp;</td></tr></table><span style=3D""><img =
+src=3D"https://www.facebook.com/email_open_log_pic.php?mid=3D61237ea3afa03=
+G4b7641f4G6123833d0fcd5G2bf" style=3D"border:0;width:1px;height:1px;" =
+/></span></td></tr></table></body></html>
+
+
+
+--b1_d87d5f9d64ea7ed87e6a73ba01c8efb8--
+

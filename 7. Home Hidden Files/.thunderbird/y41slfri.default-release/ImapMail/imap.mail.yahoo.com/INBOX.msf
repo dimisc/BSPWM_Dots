@@ -1,0 +1,249 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (B8=prevkeywords)(B9=ProtoThreadFlags)(BA=folderName)
+  (BB=dobayes.mailnews@mozilla.org#junk.empty)
+  (BC=dobayes.mailnews@mozilla.org#junk)(BD=storeToken)(BE=gloda-id)
+  (BF=gloda-dirty)(C0=sortType)(C1=sortOrder)(C2=viewFlags)(C3=viewType)
+  (C4=columnStates)(C5=MRUTime)(C6=sortColumns)(C7=customSortCol)
+  (C8=imageSize)(C9=sender_name)(CA=ns:msg:db:row:scope:ops:all)
+  (CB=ns:msg:db:table:kind:ops)(CC=useServerRetention)(CD=retainBy)
+  (CE=daysToKeepHdrs)(CF=numHdrsToKeep)(D0=daysToKeepBodies)
+  (D1=useServerDefaults)(D2=cleanupBodies)(D3=applyToFlaggedMessages)
+  (D4=preview)(D5=notAPhishMessage)(D6=pendingRemoval)(D7=op)(D8=msgKey)
+  (D9=opFlags)(DA=newFlags)(DB=moveDest)(DC=msgSize)(DD=inPlayback)
+  (80=ns:msg:db:row:scope:msgs:all)(81=subject)(82=sender)(83=message-id)
+  (84=references)(85=recipients)(86=date)(87=size)(88=flags)(89=priority)
+  (8A=label)(8B=numLines)(8C=ccList)(8D=bccList)(8E=msgThreadId)
+  (8F=threadId)(90=threadFlags)(91=threadNewestMsgDate)(92=children)
+  (93=unreadChildren)(94=threadSubject)(95=msgCharSet)
+  (96=ns:msg:db:table:kind:msgs)(97=ns:msg:db:table:kind:thread)
+  (98=ns:msg:db:table:kind:allthreads)
+  (99=ns:msg:db:row:scope:threads:all)(9A=threadParent)(9B=threadRoot)
+  (9C=msgOffset)(9D=offlineMsgSize)
+  (9E=ns:msg:db:row:scope:dbfolderinfo:all)
+  (9F=ns:msg:db:table:kind:dbfolderinfo)(A0=numMsgs)(A1=numNewMsgs)
+  (A2=folderSize)(A3=expungedBytes)(A4=folderDate)(A5=highWaterKey)
+  (A6=mailboxName)(A7=UIDValidity)(A8=totPendingMsgs)
+  (A9=unreadPendingMsgs)(AA=expiredMark)(AB=version)(AC=forceReparse)
+  (AD=fixedBadRefThreading)(AE=onlineName)(AF=highestModSeq)
+  (B0=imapFlags)(B1=highestRecordedUID)
+  (B2=ns:msg:db:row:scope:pending:all)(B3=ns:msg:db:table:kind:pending)
+  (B4=dateReceived)(B5=junkscore)(B6=junkscoreorigin)(B7=keywords)>
+<(79E=72a8c)(79C=6616669f)(81=0)(80=1)>
+[82:m(^9B^79E)(^8F^79E)(^91^79C)(^90=0)(^92=1)]
+<(7A5=72a8b)(7A3=66160477)>[83:m(^9B^7A5)(^8F^7A5)(^91^7A3)(^90=0)(^92=1)]
+<(706=68d10)>[72:m(^9B^706)(^8F^706)(^91=0)(^90=0)(^92=0)]
+<(74E=68d34)>[77:m(^9B^74E)(^8F^74E)(^91=0)(^90=0)(^92=0)]
+<(755=68d2a)>[78:m(^9B^755)(^8F^755)(^91=0)(^90=0)(^92=0)]
+<(768=68d8e)>[79:m(^9B^768)(^8F^768)(^91=0)(^90=0)(^92=0)]
+<(76D=68d8d)>[7A:m(^9B^76D)(^8F^76D)(^91=0)(^90=0)(^92=0)]
+<(777=72adc)(774=66229e31)>[7B:m(^9B^777)(^8F^777)(^91^774)(^90=0)(^92=1)]
+<(77D=72abc)(77B=661e214d)>[7C:m(^9B^77D)(^8F^77D)(^91^77B)(^90=0)(^92=1)]
+<(781=72ab8)(77F=661d1f42)>[7D:m(^9B^781)(^8F^781)(^91^77F)(^90=0)(^92=1)]
+<(785=72ab7)(783=661d1f35)>[7E:m(^9B^785)(^8F^785)(^91^783)(^90=0)(^92=1)]
+<(78B=72aa7)(789=661a60a7)>[7F:m(^9B^78B)(^8F^78B)(^91^789)(^90=0)(^92=1)]
+<(791=72a9e)(78F=6618e309)>[80:m(^9B^791)(^8F^791)(^91^78F)(^90=0)(^92=1)]
+<(797=72a91)(795=6616b6a9)>[81:m(^9B^797)(^8F^797)(^91^795)(^90=0)(^92=1)]
+
+<(6CA=10000001)(700=polette <noreply@polette.com>)(701
+    =Demetris Chrysostomou <dimitrisucy@yahoo.gr>)(772
+    =Your order confirmation)(773
+    =66229e32.5d0a0220.f60e4.f7aa@mx.google.com)(776=d877c)(8F=imapflag)
+  (90=\$notjunk)(91=\$notjunk )(92=ffffffff)(778
+    =Temu <temu@orders.temu.com>)(88=dimitrisucy@yahoo.gr)(779
+    =Your Temu order confirmation (#PO-052-11895938509432071\))(77A
+    =SUC-nfxuRvO61y7k8sRejw@geopod-ismtpd-11)(77C=20df7)(762
+    ="no-reply-my-invoices@cyta.com.cy" <no-reply-my-invoices@cyta.com.cy>)
+  (763
+    ==?UTF-8?B?Q3l0YSDOl867zrXOus+Ez4HOv869zrnOus+Mz4IgzpvOv86zzrHPgQ==?= =?UT\
+F-8?B?zrnOsc+DzrzPjM+CICjOsc+BLiAzMDk5NTE2MTk3KQ==?=)(77E
+    =md5:WFhtubLQxcbrZYr/JlnCCA==)(780=1c9563)(769
+    ==?UTF-8?B?Q3l0YSDOl867zrXOus+Ez4HOv869zrnOus+Mz4IgzpvOv86zzrHPgQ==?= =?UT\
+F-8?B?zrnOsc+DzrzPjM+CICjOsc+BLiAzMDk5NDgzNjM3KQ==?=)(782
+    =md5:yRieFgu8c1IsERSJNVV87A==)(784=1caee0)(787
+    =Your Temu order confirmation (#PO-052-09147130798712071\))(788
+    =hJn3gIHOSTOCAf35HRi0jQ@geopod-ismtpd-9)(78A=20df2)(78D
+    =Your Temu order confirmation (#PO-052-14644783719032071\))(78E
+    =eY7bINJ-Rb2JN6THj_9eGw@geopod-ismtpd-5)(790=20df6)(793
+    =Your Temu order confirmation (#PO-052-18080734336632071\))(794
+    =20240410155625.3a5ed1c04e41b3ed@orders.temu.com)(796=209a8)(2B6=81)
+  (799
+    ==?UTF-8?B?zqTOsc68zrXOr86/IM6RzqDOlSDOus6xzrkgzpXOni7OlQ==?= <sxedia@rese\
+cfund.org.cy>)(79A
+    ==?UTF-8?B?W86kzrHOvM61zq/OvyDOkc6gzpUgzrrOsc65IM6Vzp4uzpU=?= =?UTF-8?B?XS\
+AtIM6Vzr3Ot868zq3Pgc+Jz4POtyDOs865zrEgzrHOuw==?= =?UTF-8?B?zrvOsc6zzq4gzrrOsc+\
+EzqzPg8+EzrHPg863z4IgzrHOr8+Ezrc=?= =?UTF-8?B?z4POt8+CIM68zrUgzrHPgS4gMjIwNDE0\
+ODk2?=)(79B=iE46IA9BufuQmSE3Wc69SYtyQmg6hsFUVVrmnUv0@resecfund.org.cy)
+  (79D=32a1)(7A7=7819515)(770=7750fb)(7A8=32f4)(7A9=c0)(7A0
+    =Carlinkit Wireless CarPlay Official Store <store+33767227530@t.shopifyema\
+il.com>)(7A1=A shipment from order #CH12957 is on the way)(7A2
+    =E1030004-17C4CCD376E463DA-C51580B8@shopify.com)(7A4=65cb)(7AA=7832559)
+  (7AB=7783ef)(7AC=661e)(7AD=263)>
+{1:^80 {(k^96:c)(s=9)} 
+  [72ADC(^88^6CA)(^82^700)(^85^701)(^81^772)(^83^773)(^B4^774)(^86^774)
+    (^89=1)(^87^776)(^B5=0)(^B6^8F)(^B8^90)(^B7^91)(^9A^92)(^8E^777)
+    (^B9=0)]
+  [72ABC(^88=1)(^82^778)(^85^88)(^81^779)(^83^77A)(^B4^77B)(^86^77B)
+    (^89=1)(^87^77C)(^B5=0)(^B6^8F)(^B8^90)(^B7^91)(^9A^92)(^8E^77D)
+    (^B9=0)]
+  [72AB8(^88^6CA)(^82^762)(^85^88)(^81^763)(^83^77E)(^B4^77F)(^86^77F)
+    (^89=1)(^87^780)(^B5=0)(^B6^8F)(^B8^90)(^B7^91)(^9A^92)(^8E^781)
+    (^B9=0)]
+  [72AB7(^88^6CA)(^82^762)(^85^88)(^81^769)(^83^782)(^B4^783)(^86^783)
+    (^89=1)(^87^784)(^B5=0)(^B6^8F)(^B8^90)(^B7^91)(^9A^92)(^8E^785)
+    (^B9=0)]
+  [72AA7(^88=1)(^82^778)(^85^88)(^81^787)(^83^788)(^B4^789)(^86^789)
+    (^89=1)(^87^78A)(^B5=0)(^B6^8F)(^B8^90)(^B7^91)(^9A^92)(^8E^78B)
+    (^B9=0)]
+  [72A9E(^88=1)(^82^778)(^85^88)(^81^78D)(^83^78E)(^B4^78F)(^86^78F)
+    (^89=1)(^87^790)(^B5=0)(^B6^8F)(^B8^90)(^B7^91)(^9A^92)(^8E^791)
+    (^B9=0)]
+  [72A91(^88=1)(^82^778)(^85^88)(^81^793)(^83^794)(^B4^795)(^86^795)
+    (^89=1)(^87^796)(^B5=0)(^B6^8F)(^B8^90)(^B7^91)(^9A^92)(^8E^797)
+    (^B9=0)]
+  [72A8C(^88=81)(^82^799)(^85^88)(^81^79A)(^83^79B)(^B4^79C)(^86^79C)
+    (^89=1)(^87^79D)(^B5=0)(^B6^8F)(^B8^90)(^B7^91)(^9A^92)(^8E^79E)
+    (^B9=0)(^BD^7A7)(^9C^770)(^9D^7A8)(^8B=c0)]
+  [72A8B(^88=81)(^82^7A0)(^85^88)(^81^7A1)(^83^7A2)(^B4^7A3)(^86^7A3)
+    (^89=1)(^87^7A4)(^B5=0)(^B6^8F)(^B8^90)(^B7^91)(^9A^92)(^8E^7A5)
+    (^B9=0)(^BD^7AA)(^9C^7AB)(^9D^7AC)(^8B=263)]}
+{72ADC:^80 {(k^97:c)(s=9)7B:m } 72ADC }
+{72A9E:^80 {(k^97:c)(s=9)80:m } 72A9E }
+{72A8B:^80 {(k^97:c)(s=9)83:m } 72A8B }
+{72AB7:^80 {(k^97:c)(s=9)7E:m } 72AB7 }
+{72A8C:^80 {(k^97:c)(s=9)82:m } 72A8C }
+{72AB8:^80 {(k^97:c)(s=9)7D:m } 72AB8 }
+{68D8D:^80 {(k^97:c)(s=9)7A:m } }
+{72ABC:^80 {(k^97:c)(s=9)7C:m } 72ABC }
+{68D8E:^80 {(k^97:c)(s=9)79:m } }
+{72A91:^80 {(k^97:c)(s=9)81:m } 72A91 }
+{72AA7:^80 {(k^97:c)(s=9)7F:m } 72AA7 }[68D8E:^80]
+[68D10:^80]
+[68D2A:^80]
+[68D34:^80]
+[68D8D:^80]
+{FFFFFFFD:^99 {(k^98:c)(s=9)} 
+  [72ADC(^94^772)]
+  [72ABC(^94^779)]
+  [72AB8(^94^763)]
+  [72AB7(^94^769)]
+  [72AA7(^94^787)]
+  [72A9E(^94^78D)]
+  [72A91(^94^793)]
+  [72A8C(^94^79A)]
+  [72A8B(^94^7A1)]}
+<(702=Your order has been shipped)>
+[68D10:^99(^94^702)]
+<(750=Water Bill - Account 7 / 4672 Year 2024 Period 1)>
+[68D2A:^99(^94^750)]
+<(74A
+    =Your Amazon.co.uk order of "Sicario [4K Ultra-HD ..." and 3 more item(s\)\
+ has been dispatched)>[68D34:^99(^94^74A)]
+
+<(82=INBOX)(83=8083014)(76E=35285)(85=4000)(7A6=9)(6E4=1708880674)(B8=12)
+  (BF=2)(C0=$122)(C5
+    ={"selectCol":{"visible":false,"ordinal":"1"},"threadCol":{"visible":false\
+,"ordinal":"3"},"flaggedCol":{"visible":false,"ordinal":"5"},"attachmentCol":{\
+"visible":true,"ordinal":"7"},"subjectCol":{"visible":true,"ordinal":"9"},"unr\
+eadButtonColHeader":{"visible":true,"ordinal":"11"},"senderCol":{"visible":fal\
+se,"ordinal":"13"},"recipientCol":{"visible":false,"ordinal":"15"},"correspond\
+entCol":{"visible":true,"ordinal":"17"},"junkStatusCol":{"visible":true,"ordin\
+al":"19"},"receivedCol":{"visible":false,"ordinal":"21"},"dateCol":{"visible":\
+true,"ordinal":"23"},"statusCol":{"visible":false,"ordinal":"25"},"sizeCol":{"\
+visible":true,"ordinal":"27"},"tagsCol":{"visible":false,"ordinal":"29"},"acco\
+untCol":{"visible":false,"ordinal":"31"},"priorityCol":{"visible":false,"ordin\
+al":"33"},"unreadCol":{"visible":false,"ordinal":"35"},"totalCol":{"visible":f\
+alse,"ordinal":"37"},"locationCol":{"visible":false,"ordinal":"39"},"idCol":{"\
+visible":false,"ordinal":"41"},"deleteCol":{"visible":false,"ordinal":"43"}})>
+{1:^9E {(k^9F:c)(s=9)} 
+  [1(^AB=1)(^AC=0)(^AD=1)(^AE^82)(^88^83)(^A6^82)(^AF^76E)(^B0^85)(^A7=1)
+    (^B1^777)(^A0=9)(^A5^777)(^C5^6E4)(^C0=12)(^C1=2)(^C2=1)(^C3=0)
+    (^C6^C0)(^C4^C5)(^A1=0)(^CC=1)(^A3^770)]}
+
+@$${C3{@
+@$$}C3}@
+
+@$${C4{@
+<(7AE=7858701)(7AF=77ea0d)(7B0=209fb)(7B1=6d5)>
+[-72A91:^80(^88=81)(^82^778)(^85^88)(^81^793)(^83^794)(^B4^795)(^86^795)
+    (^89=1)(^87^796)(^B5=0)(^B6^8F)(^B8^90)(^B7^91)(^9A^92)(^8E^797)
+    (^B9=0)(^BD^7AE)(^9C^7AF)(^9D^7B0)(^8B=6d5)]
+@$$}C4}@
+
+@$${C5{@
+<(7B2=7992328)(7B3=79f408)(7B4=20e45)(7B5=6f3)>
+[-72AA7:^80(^88=81)(^82^778)(^85^88)(^81^787)(^83^788)(^B4^789)(^86^789)
+    (^89=1)(^87^78A)(^B5=0)(^B6^8F)(^B8^90)(^B7^91)(^9A^92)(^8E^78B)
+    (^B9=0)(^BD^7B2)(^9C^7B3)(^9D^7B4)(^8B=6f3)]
+@$$}C5}@
+
+@$${C6{@
+<(7B6=8127053)(7B7=7c024d)(7B8=20e49)>
+[-72A9E:^80(^88=81)(^82^778)(^85^88)(^81^78D)(^83^78E)(^B4^78F)(^86^78F)
+    (^89=1)(^87^790)(^B5=0)(^B6^8F)(^B8^90)(^B7^91)(^9A^92)(^8E^791)
+    (^B9=0)(^BD^7B6)(^9C^7B7)(^9D^7B8)(^8B=6f3)]
+@$$}C6}@
+
+@$${C7{@
+<(7B9=8261782)(7BA=7e1096)(7BB=20e4a)(7BC=6f2)>
+[-72ABC:^80(^88=81)(^82^778)(^85^88)(^81^779)(^83^77A)(^B4^77B)(^86^77B)
+    (^89=1)(^87^77C)(^B5=0)(^B6^8F)(^B8^90)(^B7^91)(^9A^92)(^8E^77D)
+    (^B9=0)(^BD^7B9)(^9C^7BA)(^9D^7BB)(^8B=6f2)]
+@$$}C7}@
+
+@$${C8{@
+<(3CF=10000081)(7BD=8396512)(7BE=801ee0)(7BF=d87cf)(7C0=2ed7)>
+[-72ADC:^80(^88^3CF)(^82^700)(^85^701)(^81^772)(^83^773)(^B4^774)(^86^774)
+    (^89=1)(^87^776)(^B5=0)(^B6^8F)(^B8^90)(^B7^91)(^9A^92)(^8E^777)
+    (^B9=0)(^BD^7BD)(^9C^7BE)(^9D^7BF)(^8B^7C0)]
+@$$}C8}@
+
+@$${C9{@
+<(7C1=9283247)(7C2=8da6af)(7C3=1c95b6)(7C4=6405)>
+[-72AB8:^80(^88^3CF)(^82^762)(^85^88)(^81^763)(^83^77E)(^B4^77F)(^86^77F)
+    (^89=1)(^87^780)(^B5=0)(^B6^8F)(^B8^90)(^B7^91)(^9A^92)(^8E^781)
+    (^B9=0)(^BD^7C1)(^9C^7C2)(^9D^7C3)(^8B^7C4)]
+@$$}C9}@
+
+@$${CA{@
+@$$}CA}@
+
+@$${CB{@
+<(7C5=11156581)(7C6=aa3c65)(7C7=1caf33)(7C8=645d)>
+[-72AB7:^80(^88^3CF)(^82^762)(^85^88)(^81^769)(^83^782)(^B4^783)(^86^783)
+    (^89=1)(^87^784)(^B5=0)(^B6^8F)(^B8^90)(^B7^91)(^9A^92)(^8E^785)
+    (^B9=0)(^BD^7C5)(^9C^7C6)(^9D^7C7)(^8B^7C8)]
+@$$}CB}@
+
+@$${CC{@
+@$$}CC}@
+
+@$${CD{@
+<(7CE=202)>[72ABC:^80(^BE=202)]
+<(7CB=1fe)>[72A91:^80(^BE=1fe)]
+<(7CC=200)>[72AA7:^80(^BE=200)]
+<(7CF=203)>[72ADC:^80(^BE=203)]
+<(7CD=201)>[72A9E:^80(^BE=201)]
+<(7CA=1fc)>[72A8B:^80(^BE=1fc)]
+<(7D1=206)>[72AB7:^80(^BE=206)]
+<(7C9=1fb)>[72A8C:^80(^BE=1fb)]
+<(7D0=204)>[72AB8:^80(^BE=204)]
+@$$}CD}@
+
+@$${CF{@
+[-82:m(^9B^79E)(^8F^79E)(^91=0)(^90=0)(^92=0)]
+{1:^80 {(k^96:c)(s=9)} -
+  [-72A8C]}
+{-72A8C:^80 {(k^97:c)(s=9)82:m } }
+{FFFFFFFD:^99 {(k^98:c)(s=9)} -72A8C }
+<(7D2=35311)(7D4=8)>[-1:^9E(^AB=1)(^AC=0)(^AD=1)(^AE^82)(^88^83)(^A6^82)
+    (^AF^7D2)(^B0^85)(^A7=1)(^B1^777)(^A0=8)(^A5^777)(^C5^6E4)(^C0=12)
+    (^C1=2)(^C2=1)(^C3=0)(^C6^C0)(^C4^C5)(^A1=0)(^CC=1)(^A3^7AB)]
+{-1:^CA {(k^CB:c)(s=9)} }
+@$$}CF}@
+
+@$${D0{@
+@$$}D0}@
+
+@$${D1{@
+@$$}D1}@

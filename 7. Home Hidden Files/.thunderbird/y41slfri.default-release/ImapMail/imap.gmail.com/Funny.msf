@@ -1,0 +1,212 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (B8=ns:msg:db:table:kind:pending)(B9=dateReceived)(BA=junkscore)
+  (BB=junkscoreorigin)(BC=keywords)(BD=ProtoThreadFlags)(BE=folderName)
+  (BF=X-GM-MSGID)(C0=X-GM-THRID)(C1=X-GM-LABELS)
+  (C2=dobayes.mailnews@mozilla.org#junk.empty)
+  (C3=dobayes.mailnews@mozilla.org#junk)(C4=storeToken)(C5=gloda-id)
+  (C6=gloda-dirty)(80=ns:msg:db:row:scope:msgs:all)(81=subject)
+  (82=sender)(83=message-id)(84=references)(85=recipients)(86=date)
+  (87=size)(88=flags)(89=priority)(8A=label)(8B=numLines)(8C=ccList)
+  (8D=bccList)(8E=msgThreadId)(8F=threadId)(90=threadFlags)
+  (91=threadNewestMsgDate)(92=children)(93=unreadChildren)
+  (94=threadSubject)(95=msgCharSet)(96=ns:msg:db:table:kind:msgs)
+  (97=ns:msg:db:table:kind:thread)(98=ns:msg:db:table:kind:allthreads)
+  (99=ns:msg:db:row:scope:threads:all)(9A=threadParent)(9B=threadRoot)
+  (9C=msgOffset)(9D=offlineMsgSize)
+  (9E=ns:msg:db:row:scope:dbfolderinfo:all)
+  (9F=ns:msg:db:table:kind:dbfolderinfo)(A0=numMsgs)(A1=numNewMsgs)
+  (A2=folderSize)(A3=expungedBytes)(A4=folderDate)(A5=highWaterKey)
+  (A6=mailboxName)(A7=UIDValidity)(A8=totPendingMsgs)
+  (A9=unreadPendingMsgs)(AA=expiredMark)(AB=version)(AC=forceReparse)
+  (AD=fixedBadRefThreading)(AE=onlineName)(AF=columnStates)(B0=viewFlags)
+  (B1=sortType)(B2=sortOrder)(B3=useServerRetention)(B4=highestModSeq)
+  (B5=imapFlags)(B6=highestRecordedUID)
+  (B7=ns:msg:db:row:scope:pending:all)>
+<(94=18)(8F=4ae042bb)(81=0)(80=1)>
+[1:m(^9B=18)(^8F=18)(^91^8F)(^90=0)(^92=1)]
+<(9D=2c)(9A=4b0e8576)>[2:m(^9B=2c)(^8F=2c)(^91^9A)(^90=0)(^92=1)]
+<(A5=59)(A3=4be3a163)>[3:m(^9B=59)(^8F=59)(^91^A3)(^90=0)(^92=1)]
+<(B0=63)(AC=4e27e2be)>[4:m(^9B=63)(^8F=63)(^91^AC)(^90=0)(^92=1)]
+<(BA=64)(B8=4e836d7a)>[5:m(^9B=64)(^8F=64)(^91^B8)(^90=0)(^92=1)]
+<(C1=66)(BF=4ed35eba)>[6:m(^9B=66)(^8F=66)(^91^BF)(^90=0)(^92=1)]
+<(CA=69)(C8=5434db1b)>[7:m(^9B=69)(^8F=69)(^91^C8)(^90=0)(^92=1)]
+<(D3=6a)(D1=5493f4d2)>[8:m(^9B=6a)(^8F=6a)(^91^D1)(^90=0)(^92=1)]
+
+<(AF=10000001)(A8=dimitris.chrysostomou@cy.pwc.com)(A9
+    =dimitrischr0@gmail.com)(AA=Hacked)(AB
+    =OFADC24F81.18BE5221-ONC22578D4.002E5B3C-C22578D4.002E62AE@pwc.com)
+  (AE=225bb)(93=ffffffff)(B1=1374931442859482461)(B2="\\\\Important")>
+{63:^80 {(k^97:c)(s=9)4:m } [63(^88^AF)(^82^A8)(^85^A9)(^81^AA)(^83^AB)
+    (^B9^AC)(^86^AC)(^89=1)(^87^AE)(^9A^93)(^8E=63)(^BD=0)(^BF^B1)(^C0^B1)
+    (^C1^B2)]}
+
+<(D6=81)(96
+    ="Pitsillos, Charalambos \\(CY - Nicosia\\\)" <cpitsillos@DELOITTE.COM>)
+  (97="Undisclosed recipients:")(98
+    =FW: thrilikos gousgounis Antras Ime Kai Oti 8elo Kano!!)(99
+    =E54950DA6AF98849861099439542ABE632DEA568FA@cynic0420.atrema.deloitte.com)
+  (9B=4)(9C=c01d)(91=imapflag)(92=\$notjunk junkrecorded nonjunk notjunk)
+  (9E=1320411851463592678)(8A=)(D7=7a15)(D9=31253)(DA=c070)(DB=3c8)>
+{2C:^80 {(k^97:c)(s=9)2:m } [2C(^88=81)(^82^96)(^85^97)(^81^98)(^83^99)
+    (^B9^9A)(^86^9A)(^89=4)(^87^9C)(^BA=0)(^BB^91)(^BC^92)(^9A^93)(^8E=2c)
+    (^BD=0)(^BF^9E)(^C0^9E)(^C1=)(^9C^D7)(^C4^D9)(^9D^DA)(^8B^DB)]}
+
+<(B3=chara anastasiou <charaanastasiou@hotmail.com>)(B4
+    =<e.polyviou@gmail.com>, Elena Michaelidou <emichaelidou@metlifealico.com.\
+cy>, Dimitris Chr. <dimitrischr0@gmail.com>, <louiza.zembyla@cytanet.com.cy>, \
+michael Raphael <michael@raflaw.com.cy>, <andriashimi@msn.com>, andreas televa\
+ntos <atelevantos@hotmail.com>, <andrianaziri@hotmail.com>, anna petraki <anna\
+ptrk@gmail.com>)(B5
+    ==?iso-8859-7?B?Rlc6IND58iDt4Q==?= =?iso-8859-7?B?IOXu5+Pe8+X05Q==?= =?iso\
+-8859-7?B?IPP04SDw4enk6Q==?= =?iso-8859-7?B?3CDj6eEg9O8gcw==?= =?iso-8859-7?Q?\
+ex!?=)(B6=BAY146-W14DC2FD13CC035706706CFBEF10@phx.gbl)(B7
+    =<7B31F0F8F456344EA1DD56FE7693BC784560A3B6F5@CRTASRV.crta2.local>)
+  (B9=77219)(BC=1381222219012186856)>
+{64:^80 {(k^97:c)(s=9)5:m } [64(^88=1)(^82^B3)(^85^B4)(^81^B5)(^83^B6)
+    (^84^B7)(^B9^B8)(^86^B8)(^89=1)(^87^B9)(^9A^93)(^8E=64)(^BD=0)(^BF^BC)
+    (^C0^BC)(^C1=)]}
+
+<(9F="Ioannou, Yiannis (CY - Nicosia\)" <yioannou@DELOITTE.COM>)(A0
+    =" (dim2blue@yahoo.com\)" <dim2blue@yahoo.com>, " (marconcy@hotmail.com\)"\
+ <marconcy@hotmail.com>, " (panikosconstantinides@yahoo.com\)" <panikosconstan\
+tinides@yahoo.com>, "Achilleas Psiloyenis (achilleaspsiloyenis@gmail.com\)" <a\
+chilleaspsiloyenis@gmail.com>, ANDREAS ARXIGOS <aargyrou19@yahoo.com>, "Antoni\
+s Xenophontos (afontas@yahoo.co.uk\)" <afontas@yahoo.co.uk>, Antrikkos Patra <\
+andreas_pd@hotmail.com>, "EVI KONSTANTINOU (evi_va@yahoo.com\)" <evi_va@yahoo.\
+com>, "ILARION GEORGIADIS (LGeorghiades@cbros.com.cy\)" <LGeorghiades@cbros.co\
+m.cy>, "marinos.spyridakis@cy.pwc.com" <marinos.spyridakis@cy.pwc.com>, "Mitsi\
+os Panepistimio (dimitrischr@msn.com\)" <dimitrischr@msn.com>, nikodimos damia\
+nou panepistimio <nicodemosdam@hotmail.com>, timos lemeso <t.kyriakides@ellina\
+sdiy.com>, yiannas <panayiotisyiannas@yahoo.com>)(A1
+    =FW: OMONOIA LAOS PROTATHLIMA ...)(A2
+    =EEBA0CF9C989C845849F4416E0B434793D016239A2@cynic0420.atrema.deloitte.com)
+  (A4=79c2)(A7=1335056596528951596)(D8=2ba)>
+{59:^80 {(k^97:c)(s=9)3:m } [59(^88=81)(^82^9F)(^85^A0)(^81^A1)(^83^A2)
+    (^B9^A3)(^86^A3)(^89=1)(^87^A4)(^9A^93)(^8E=59)(^BD=0)(^BF^A7)(^C0^A7)
+    (^C1=)(^9C=0)(^C4=0)(^9D^D7)(^8B^D8)]}
+
+<(8B="Elena Michaelidou" <emichaelidou@alico.com.cy>)(8C
+    =<dimitris.chrysostomou@cy.pwc.com>, <dimitrischr@msn.com>)(8D
+    =!!!!! DIMITRI MOU ENJOY!!!! :\))(8E
+    =72EDD580241EF446BEDC573C08212790ED5125@exchange.alico.com.cy)(90=6e88)
+  (95=1317232842947075696)(DC=13a85)(DD=80517)(DE=6edb)(DF=2a5)(BD
+    =Fw: XAXAXA)(BE
+    =OF16EB4BE6.D3005E0C-ONC2257956.00381D34-C2257956.00382760@pwc.com)
+  (C0=693e8)(C3=1386715639890382766)(A6=3)(C4=Alexis.Kyriakides@cy.pwc.com)
+  (C5=dimitrisucy@yahoo.gr)(C6=Fw: Screw you guys I'm going home!!!)
+  (C7=OF54DBAE08.3745E22C-ONC2257D6B.00242420-C2257D6B.00242D50@us.pwc.com)
+  (C9=2caae)(CC=1481375863845154408)(CD=Rebecca.Demosthenous@cy.pwc.com)
+  (CE
+    =Angelos.Perdios@cy.pwc.com, Vladimir.Mladenov@cy.pwc.com, Chrysanthi.Schi\
+za@cy.pwc.com, panayiota.papastavrou@cy.pwc.com, natasia.stylianou@cy.pwc.com,\
+ demetra.pantazi@cy.pwc.com, marios.mouktaris@cy.pwc.com, Chloe.Alexandrou@cy.\
+pwc.com, marios.stefanou@cy.pwc.com, Vasilis.Costa@cy.pwc.com, Ioannis.Mavride\
+s@cy.pwc.com, Christos.Alexandrou@cy.pwc.com, Michalis.Nicolaides@cy.pwc.com, \
+maria.syricha@cy.pwc.com, antonis.frangos@cy.pwc.com, huseyin.aritkan@cy.pwc.c\
+om, haris.frangoulides@cy.pwc.com, Loizos.Alexandrou@cy.pwc.com, Andreas.Anton\
+iou@cy.pwc.com, Panayiotis.Kolios@cy.pwc.com, Myria.Agapiou@cy.pwc.com, herodo\
+tos.neophytou@cy.pwc.com, stefanou05areti@hotmail.com, "Dimitris Chr." <dimitr\
+ischr0@gmail.com>, Colette.Haladjian@cy.pwc.com, Panayiota.Charalambous@cy.pwc\
+.com)(CF=The one with the '5 News' - The good bye chapter)(D0
+    =OF2BB86AE9.DF51A7BB-ONC2257DAC.0031A629-C2257DB3.00360816@us.pwc.com)
+  (D2=818a0)(D5=1487911122584073234)>
+{1:^80 {(k^96:c)(s=9)} 
+  [18(^88=81)(^82^8B)(^85^8C)(^81^8D)(^83^8E)(^B9^8F)(^86^8F)(^89=1)
+    (^87^90)(^BA=0)(^BB^91)(^BC^92)(^9A^93)(^8E=18)(^BD=0)(^BF^95)(^C0^95)
+    (^C1=)(^9C^DC)(^C4^DD)(^9D^DE)(^8B^DF)]2C 59 63 64 
+  [66(^88=1)(^82^A8)(^85^A9)(^81^BD)(^83^BE)(^B9^BF)(^86^BF)(^89=1)
+    (^87^C0)(^9A^93)(^8E=66)(^BD=0)(^BF^C3)(^C0^C3)(^C1^B2)]
+  [69(^88=3)(^82^C4)(^85^C5)(^81^C6)(^83^C7)(^B9^C8)(^86^C8)(^89=1)
+    (^87^C9)(^9A^93)(^8E=69)(^BD=0)(^BF^CC)(^C0^CC)(^C1=)]
+  [6A(^88=1)(^82^CD)(^85^CE)(^81^CF)(^83^D0)(^B9^D1)(^86^D1)(^89=1)
+    (^87^D2)(^9A^93)(^8E=6a)(^BD=0)(^BF^D5)(^C0^D5)(^C1=)]}
+{18:^80 {(k^97:c)(s=9)1:m } 18 }
+{66:^80 {(k^97:c)(s=9)6:m } 66 }
+{69:^80 {(k^97:c)(s=9)7:m } 69 }
+{6A:^80 {(k^97:c)(s=9)8:m } 6A }
+{FFFFFFFD:^99 {(k^98:c)(s=9)} [18(^94^8D)]
+  [2C(^94^98)]
+  [59(^94^A1)]
+  [63(^94^AA)]
+  [64(^94^B5)]
+  [66(^94^BD)]
+  [69(^94^C6)]
+  [6A(^94^CF)]}
+
+<(82=Funny)(83=8082014)(84
+    ={"selectCol":{"visible":false,"ordinal":"1"},"threadCol":{"visible":false\
+,"ordinal":"3"},"flaggedCol":{"visible":false,"ordinal":"5"},"attachmentCol":{\
+"visible":true,"ordinal":"7"},"subjectCol":{"visible":true,"ordinal":"9"},"unr\
+eadButtonColHeader":{"visible":true,"ordinal":"11"},"senderCol":{"visible":fal\
+se,"ordinal":"13"},"recipientCol":{"visible":false,"ordinal":"15"},"correspond\
+entCol":{"visible":true,"ordinal":"17"},"junkStatusCol":{"visible":true,"ordin\
+al":"19"},"receivedCol":{"visible":false,"ordinal":"21"},"dateCol":{"visible":\
+true,"ordinal":"23"},"statusCol":{"visible":false,"ordinal":"25"},"sizeCol":{"\
+visible":true,"ordinal":"27"},"tagsCol":{"visible":false,"ordinal":"29"},"acco\
+untCol":{"visible":false,"ordinal":"31"},"priorityCol":{"visible":false,"ordin\
+al":"33"},"unreadCol":{"visible":false,"ordinal":"35"},"totalCol":{"visible":f\
+alse,"ordinal":"37"},"locationCol":{"visible":false,"ordinal":"39"},"idCol":{"\
+visible":false,"ordinal":"41"},"deleteCol":{"visible":false,"ordinal":"43"}})
+  (85=12)(86=2)(88=e000)(89=23bf2741)(D4=8)>
+{1:^9E {(k^9F:c)(s=9)} 
+  [1(^AB=1)(^AC=0)(^AD=1)(^AE^82)(^88^83)(^A6^82)(^AF^84)(^B0=1)(^B1=12)
+    (^B2=2)(^B3=1)(^B4=)(^B5^88)(^A7^89)(^B6=6a)(^A0=8)(^A5=6a)]}
+
+@$${2{@
+< <(a=c)> // (f=iso-8859-1)
+  (C7=ns:msg:db:row:scope:ops:all)(C8=ns:msg:db:table:kind:ops)>
+[66:^80(^BC=)]
+[69:^80(^BC=)]
+[6A:^80(^BC=)]
+<(E2=10000081)(E0=1a960)(E1=108896)(E3=2260e)(E4=730)>
+[-63:^80(^88^E2)(^82^A8)(^85^A9)(^81^AA)(^83^AB)(^B9^AC)(^86^AC)(^89=1)
+    (^87^AE)(^9A^93)(^8E=63)(^BD=0)(^BF^B1)(^C0^B1)(^C1^B2)(^BC=)(^9C^E0)
+    (^C4^E1)(^9D^E3)(^8B^E4)]
+[64:^80(^BC=)]
+[59:^80(^BC=)]
+<(87=6478090)>[1:^9E(^B4^87)]
+{-1:^C7 {(k^C8:c)(s=9)} }
+@$$}2}@
+
+@$${3{@
+<(E7=83)(E5=3cf6e)(E6=249710)(E8=2cb01)(E9=9a9)>
+[-69:^80(^88=83)(^82^C4)(^85^C5)(^81^C6)(^83^C7)(^B9^C8)(^86^C8)(^89=1)
+    (^87^C9)(^9A^93)(^8E=69)(^BD=0)(^BF^CC)(^C0^CC)(^C1=)(^BC=)(^9C^E5)
+    (^C4^E6)(^9D^E8)(^8B^E9)]
+@$$}3}@
+
+@$${4{@
+<(EA=69a6f)(EB=432751)(EC=6943b)(ED=168a)>
+[-66:^80(^88=81)(^82^A8)(^85^A9)(^81^BD)(^83^BE)(^B9^BF)(^86^BF)(^89=1)
+    (^87^C0)(^9A^93)(^8E=66)(^BD=0)(^BF^C3)(^C0^C3)(^C1^B2)(^BC=)(^9C^EA)
+    (^C4^EB)(^9D^EC)(^8B^ED)]
+@$$}4}@
+
+@$${5{@
+<(EE=d2eaa)(EF=863914)(F0=7726c)(F1=1971)>
+[-64:^80(^88=81)(^82^B3)(^85^B4)(^81^B5)(^83^B6)(^84^B7)(^B9^B8)(^86^B8)
+    (^89=1)(^87^B9)(^9A^93)(^8E=64)(^BD=0)(^BF^BC)(^C0^BC)(^C1=)(^BC=)
+    (^9C^EE)(^C4^EF)(^9D^F0)(^8B^F1)]
+@$$}5}@
+
+@$${6{@
+<(F2=14a116)(F3=1351958)(F4=818f3)(F5=1b47)>
+[-6A:^80(^88=81)(^82^CD)(^85^CE)(^81^CF)(^83^D0)(^B9^D1)(^86^D1)(^89=1)
+    (^87^D2)(^9A^93)(^8E=6a)(^BD=0)(^BF^D5)(^C0^D5)(^C1=)(^BC=)(^9C^F2)
+    (^C4^F3)(^9D^F4)(^8B^F5)]
+@$$}6}@
+
+@$${7{@
+@$$}7}@
+
+@$${8{@
+<(FB=e6)>[66:^80(^C5=e6)]
+<(FA=e4)>[69:^80(^C5=e4)]
+<(FD=e9)>[6A:^80(^C5=e9)]
+<(F9=e2)>[63:^80(^C5=e2)]
+<(F7=da)>[2C:^80(^C5=da)]
+<(FC=e8)>[64:^80(^C5=e8)]
+<(F6=d9)>[59:^80(^C5=d9)]
+<(F8=db)>[18:^80(^C5=db)]
+@$$}8}@

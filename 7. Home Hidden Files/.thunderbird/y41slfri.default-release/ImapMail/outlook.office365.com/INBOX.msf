@@ -1,0 +1,87 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (B8=highestRecordedUID)(B9=dobayes.mailnews@mozilla.org#junk.empty)
+  (BA=dobayes.mailnews@mozilla.org#junk)(BB=folderName)
+  (BC=useServerRetention)(BD=retainBy)(BE=daysToKeepHdrs)
+  (BF=numHdrsToKeep)(C0=daysToKeepBodies)(C1=useServerDefaults)
+  (C2=cleanupBodies)(C3=applyToFlaggedMessages)(C4=customSortCol)
+  (C5=ns:msg:db:row:scope:ops:all)(C6=ns:msg:db:table:kind:ops)
+  (C7=ns:msg:db:row:scope:pending:all)(C8=ns:msg:db:table:kind:pending)
+  (C9=dateReceived)(CA=ProtoThreadFlags)(CB=preview)(CC=storeToken)
+  (CD=gloda-id)(CE=gloda-dirty)(CF=junkscore)(D0=keywords)(D1=replyTo)
+  (D2=imageSize)(D3=sender_name)(D4=prevkeywords)(D5=notAPhishMessage)
+  (D6=op)(D7=msgKey)(D8=opFlags)(D9=newFlags)(DA=moveDest)(DB=msgSize)
+  (DC=inPlayback)(DD=enigmail)(DE=account)(DF=pendingRemoval)
+  (80=ns:msg:db:row:scope:msgs:all)(81=subject)(82=sender)(83=message-id)
+  (84=references)(85=recipients)(86=date)(87=size)(88=flags)(89=priority)
+  (8A=label)(8B=numLines)(8C=ccList)(8D=bccList)(8E=msgThreadId)
+  (8F=threadId)(90=threadFlags)(91=threadNewestMsgDate)(92=children)
+  (93=unreadChildren)(94=threadSubject)(95=msgCharSet)
+  (96=ns:msg:db:table:kind:msgs)(97=ns:msg:db:table:kind:thread)
+  (98=ns:msg:db:table:kind:allthreads)
+  (99=ns:msg:db:row:scope:threads:all)(9A=threadParent)(9B=threadRoot)
+  (9C=msgOffset)(9D=offlineMsgSize)
+  (9E=ns:msg:db:row:scope:dbfolderinfo:all)
+  (9F=ns:msg:db:table:kind:dbfolderinfo)(A0=numMsgs)(A1=numNewMsgs)
+  (A2=folderSize)(A3=expungedBytes)(A4=folderDate)(A5=highWaterKey)
+  (A6=mailboxName)(A7=UIDValidity)(A8=totPendingMsgs)
+  (A9=unreadPendingMsgs)(AA=expiredMark)(AB=version)(AC=forceReparse)
+  (AD=fixedBadRefThreading)(AE=onlineName)(AF=MRUTime)(B0=sortType)
+  (B1=sortOrder)(B2=viewFlags)(B3=viewType)(B4=sortColumns)
+  (B5=columnStates)(B6=highestModSeq)(B7=imapFlags)>
+<(262=5a6b)(81=0)>[1A:m(^9B^262)(^8F^262)(^91=0)(^90=0)(^92=0)]
+<(269=5b0d)(266=6615408b)(80=1)>
+[1B:m(^9B^269)(^8F^269)(^91^266)(^90=0)(^92=1)]
+<(26F=5b2c)(26D=661e2cba)>[1C:m(^9B^26F)(^8F^26F)(^91^26D)(^90=0)(^92=1)]
+<(276=5b55)>[1D:m(^9B^276)(^8F^276)(^91=0)(^90=0)(^92=0)(^93=0)]
+
+<(284=10000081)(23E=no-reply@cablenetcy.net)(21D=dimitris@outlook.com)
+  (1FC=Cablenet Account Statement)(265
+    =0107018ec3042161-50bb1750-f086-4ba2-aa59-7713b3bc27f6-000000@eu-central-1\
+.amazonses.com)(283=1708d)(202=ffffffff)(21A=5|no-reply@cablenetcy.net)
+  (281=1835969)(282=1c03c1)(285=170e0)(286=4f6)(280=)(290=1fd)>
+{5B0D:^80 {(k^97:c)(s=9)1B:m } [5B0D(^88^284)(^82^23E)(^85^21D)(^81^1FC)
+    (^83^265)(^C9^266)(^86^266)(^89=1)(^87^283)(^9A^202)(^8E^269)(^CA=0)
+    (^D3^21A)(^CC^281)(^9C^282)(^9D^285)(^8B=4f6)(^D4=)(^D0=)(^CD=1fd)]}
+
+<(26A=<eac@eac.com.cy>)(26B=<dimitris@outlook.com>)(232
+    =Electricity Bill - 8920502252)(26C
+    =8ab9df0a-ce69-400e-84b4-d4b2ad51e1a7@EXCH2019-DR.eac.org)(289=105371)
+  (270=5|eac@eac.com.cy)(287=1930401)(288=1d74a1)(28A=1053c4)(28B=35c4)
+  (291=1ff)>
+{1:^80 {(k^96:c)(s=9)} 5B0D 
+  [5B2C(^88^284)(^82^26A)(^85^26B)(^81^232)(^83^26C)(^C9^26D)(^86^26D)
+    (^89=1)(^87^289)(^9A^202)(^8E^26F)(^CA=0)(^D3^270)(^CC^287)(^9C^288)
+    (^9D^28A)(^8B^28B)(^D4=)(^D0=)(^CD=1ff)]}
+{5B2C:^80 {(k^97:c)(s=9)1C:m } 5B2C }
+<(28F=1fa)>[5B55:^80(^CD=1fa)]
+{FFFFFFFD:^99 {(k^98:c)(s=9)} 
+  [5B0D(^94^1FC)]
+  [5B2C(^94^232)]}
+
+<(82=INBOX)(8A=88083014)(263=1713718719)(85=12)(90=2)(DB=$122)(8F
+    ={"selectCol":{"visible":false,"ordinal":"1"},"threadCol":{"visible":false\
+,"ordinal":"3"},"flaggedCol":{"visible":false,"ordinal":"5"},"attachmentCol":{\
+"visible":true,"ordinal":"7"},"subjectCol":{"visible":true,"ordinal":"9"},"unr\
+eadButtonColHeader":{"visible":true,"ordinal":"11"},"senderCol":{"visible":fal\
+se,"ordinal":"13"},"recipientCol":{"visible":false,"ordinal":"15"},"correspond\
+entCol":{"visible":true,"ordinal":"17"},"junkStatusCol":{"visible":true,"ordin\
+al":"19"},"receivedCol":{"visible":false,"ordinal":"21"},"dateCol":{"visible":\
+true,"ordinal":"23"},"statusCol":{"visible":false,"ordinal":"25"},"sizeCol":{"\
+visible":true,"ordinal":"27"},"tagsCol":{"visible":false,"ordinal":"29"},"acco\
+untCol":{"visible":false,"ordinal":"31"},"priorityCol":{"visible":false,"ordin\
+al":"33"},"unreadCol":{"visible":false,"ordinal":"35"},"totalCol":{"visible":f\
+alse,"ordinal":"37"},"locationCol":{"visible":false,"ordinal":"39"},"idCol":{"\
+visible":false,"ordinal":"41"},"deleteCol":{"visible":false,"ordinal":"43"}})
+  (88=2000)(89=e)>
+{1:^9E {(k^9F:c)(s=9)} 
+  [1(^AB=1)(^AC=0)(^AD=1)(^AE^82)(^88^8A)(^A6^82)(^AF^263)(^B0=12)(^B1=2)
+    (^B2=1)(^B3=0)(^B4^DB)(^B5^8F)(^B6=0)(^B7^88)(^A7=e)(^B8^276)(^BC=1)
+    (^A0=2)(^A1=0)(^A5^276)(^A3^282)]}
+
+@$${1{@
+{-1:^C5 {(k^C6:c)(s=9)} }
+@$$}1}@
+
+@$${2{@
+@$$}2}@

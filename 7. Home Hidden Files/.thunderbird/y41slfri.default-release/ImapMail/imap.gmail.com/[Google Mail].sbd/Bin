@@ -1,0 +1,1492 @@
+From - Sat Jan 28 12:35:21 2023
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: dimitrischr0@gmail.com
+Received: by 2002:a2e:83cd:0:0:0:0:0 with SMTP id s13csp1346825ljh;
+        Sat, 28 Jan 2023 02:34:10 -0800 (PST)
+X-Received: by 2002:a05:6808:128b:b0:364:4631:73f9 with SMTP id a11-20020a056808128b00b00364463173f9mr28100177oiw.44.1674902050065;
+        Sat, 28 Jan 2023 02:34:10 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1674902050; cv=none;
+        d=google.com; s=arc-20160816;
+        b=WDYdsUQlF9+45suKdqawp1INdoSbv+RT7Oj3lG078Bqjk734q/4cqxogNXT+/EzyLA
+         +Xx+QNqRuaNZYLwSDCCPj676XK8ojsepK1mJ1m62RtlUFO4rsvmDg6lsWR9swEzYnH4m
+         O7k2z5XVR0HoYs4pnnF3xr1Kt4sohIoAHA9STTRUEtt+sakBTUT4wP58uwWybRts5sMm
+         5xfZWeOYAoxw1Ua9BcIT48u/ACPngHubyaiOup4eLiOmChCiuZKItFCQ2fyzgIpEKIVu
+         xJYDGviAttPlPQ5QA1A04/l2ql2CV8RkdQwwuX2rnkV5rqkuzHP9zIcRrIoWHES56jSD
+         IExQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:feedback-id:date:mime-version
+         :dkim-signature;
+        bh=7kAJBzzX6WzFHr5+EEnqlfZBjE8g3YdvJy6kA5iaQRE=;
+        b=ZUl8h3y/UJnL+1jOB1T15JNiyqQTGV7fd8UXg36Iy6Vq7Sg1CnXnLLB17SU7+FlUau
+         Kne5ekJU2Q9GBN23L7wK5lZYVa7oJtlLtRaLaZuK4rQzItw8TWoJZ/CVxEFmp1DVcXE2
+         tAQK6wGuACbZ901qP6lP6Blik7c2DB4TyqzER60EUYVdyMX9See8+62jgOItR8xVk7hD
+         FmLM500zqk1rJYr+Im9rlA+DhpqdTABXdsz2VUe6AnqtW4j47mCY3B6pVF1Cuuzztv35
+         nDTcM+q57PqBA13YwL2GZt34tCl9rbwKnkbAX97NgeyCYKRUuSPDWRtvxVGsvA1XVLfZ
+         3J9A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=kv1md08n;
+       spf=pass (google.com: domain of 3ifruywgtdi456-9w73gsuu6c5ba.y66y3w.u64v040b90auz9iy4s03.u64@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3IfrUYwgTDI456-9w73Gsuu6C5BA.y66y3w.u64v040B90Auz9Iy4s03.u64@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3IfrUYwgTDI456-9w73Gsuu6C5BA.y66y3w.u64v040B90Auz9Iy4s03.u64@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id s19-20020a0568080b1300b0035b8f70ae9fsor1575281oij.112.2023.01.28.02.34.09
+        for <dimitrischr0@gmail.com>
+        (Google Transport Security);
+        Sat, 28 Jan 2023 02:34:10 -0800 (PST)
+Received-SPF: pass (google.com: domain of 3ifruywgtdi456-9w73gsuu6c5ba.y66y3w.u64v040b90auz9iy4s03.u64@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) client-ip=209.85.220.73;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20210112 header.b=kv1md08n;
+       spf=pass (google.com: domain of 3ifruywgtdi456-9w73gsuu6c5ba.y66y3w.u64v040b90auz9iy4s03.u64@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3IfrUYwgTDI456-9w73Gsuu6C5BA.y66y3w.u64v040B90Auz9Iy4s03.u64@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=accounts.google.com; s=20210112;
+        h=to:from:subject:message-id:feedback-id:date:mime-version:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=7kAJBzzX6WzFHr5+EEnqlfZBjE8g3YdvJy6kA5iaQRE=;
+        b=kv1md08nfsOxxMhaL6RHruRXhhsSf+5WlUPkpUCHFxqMsT7e9/2AKkH193x5OccL3G
+         la0qkjthjTdpC8B3aegD6VbNr6rG1VamHUybGGNPiSq32JLJ94nFfeqvZJpuAKcfAGcW
+         /m/SdBRSYhrD6y71yKHWIel8IyT+ABegi5pLR6FMtzaj/gK/8Io5H5y3y/7qULquagjq
+         rjI0L7KedPKp3NYzqNZCKXJIVhqhdmBq2OjBuTyzaFVqGFUAbRN9toT1cJvLok1Vh+6g
+         eh2lml6FY1ngXbhbOgTuB5ZPzlFBnFQOmsu67xPq2pTXZU+k7ktG+qoEswdvbvURf4Hq
+         RnbA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=to:from:subject:message-id:feedback-id:date:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=7kAJBzzX6WzFHr5+EEnqlfZBjE8g3YdvJy6kA5iaQRE=;
+        b=DUrn8kAyciedI2QHutpT56PFW7IXSUNB7FTgcoqlxNYO9csDrY6oHWQVdBgZz3iioK
+         JuwJXPkgY/jttFcMHywrYImW1gmAdv0xt4xkJEQG8Rb4YogIwDMlqC3NFvA0gly7pqQZ
+         kTTlE39Hxleu9eQMyMgHqlm2HqMfjwLhTNLBopOz5c7yWhcU42Ea5MmkA2QWtGmcDpZV
+         Tqph+m6ghmwA086KrSvPf8x5vEoIEHQeXVJ8v1M17f1gfx2Ns5vPgoHbrn51l9jQVTPk
+         08f9z8VXIsFEmSpNBgwNgUygQE4QWulC6YwPpeyOKV7ct/FV4hv3aQDqzUBngyGlzOlS
+         h5Lg==
+X-Gm-Message-State: AFqh2kq/aIBo8erLL124zB6GAgTwybE9GE6/mfRbGF09sRzhCrKtasNg
+	+VClTrzRTwOm//b76qVQCCBF2iklpmHmxB3dCMyCmA==
+X-Google-Smtp-Source: AMrXdXsLe9j8x1naTfjNX98bnvB6zqUrVE668jBeelmYkWmxcZ1+imOPW2hHjFUdBzxJLkHnBQE688/lSN1/Cnr4x691tg==
+MIME-Version: 1.0
+X-Received: by 2002:a54:418f:0:b0:360:ffcc:3685 with SMTP id
+ 15-20020a54418f000000b00360ffcc3685mr1982063oiy.183.1674902049652; Sat, 28
+ Jan 2023 02:34:09 -0800 (PST)
+Date: Sat, 28 Jan 2023 10:34:09 GMT
+X-Account-Notification-Type: 127
+Feedback-ID: 127:account-notifier
+X-Notifications: f41609dccc380000
+X-Notifications-Bounce-Info: AWY41VYoYpcXjzuuLgfMPLYEFRDFkQ7-VOw09FmZyXrXivrAtCNp2UD1Y4pt8xiphwY570Hoyak3VHP5HRRi4afVfVHHdGAcoN7DRRk94TmvGk1glNMv5TYaroQtdYbXdWgFgLMH-3n4dUAMbI_bgPygd2eppCrwKJfFg64QI6yINfUQInYnUugt5pwC-CqJZ_GwrqWINjAwNjA0MDQxNTM1NTk2OTMzMg
+Message-ID: <84uQME_TwEzZPo2XTk0x8g@notifications.google.com>
+Subject: Security alert
+From: Google <no-reply@accounts.google.com>
+To: dimitrischr0@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000b4018a05f3508573"
+
+--000000000000b4018a05f3508573
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+W2ltYWdlOiBHb29nbGVdDQpNb3ppbGxhIFRodW5kZXJiaXJkIEVtYWlsIHdhcyBncmFudGVkIGFj
+Y2VzcyB0byB5b3VyIEdvb2dsZSBBY2NvdW50DQoNCg0KZGltaXRyaXNjaHIwQGdtYWlsLmNvbQ0K
+DQpJZiB5b3UgZGlkIG5vdCBncmFudCBhY2Nlc3MsIHlvdSBzaG91bGQgY2hlY2sgdGhpcyBhY3Rp
+dml0eSBhbmQgc2VjdXJlIHlvdXINCmFjY291bnQuDQpDaGVjayBhY3Rpdml0eQ0KPGh0dHBzOi8v
+YWNjb3VudHMuZ29vZ2xlLmNvbS9BY2NvdW50Q2hvb3Nlcj9FbWFpbD1kaW1pdHJpc2NocjBAZ21h
+aWwuY29tJmNvbnRpbnVlPWh0dHBzOi8vbXlhY2NvdW50Lmdvb2dsZS5jb20vYWxlcnQvbnQvMTY3
+NDkwMjA0OTAwMD9yZm4lM0QxMjclMjZyZm5jJTNEMSUyNmVpZCUzRC0zNTA4NDkxODA0MTQwMzU3
+NjkwJTI2ZXQlM0QwPg0KWW91IGNhbiBhbHNvIHNlZSBzZWN1cml0eSBhY3Rpdml0eSBhdA0KaHR0
+cHM6Ly9teWFjY291bnQuZ29vZ2xlLmNvbS9ub3RpZmljYXRpb25zDQpZb3UgcmVjZWl2ZWQgdGhp
+cyBlbWFpbCB0byBsZXQgeW91IGtub3cgYWJvdXQgaW1wb3J0YW50IGNoYW5nZXMgdG8geW91cg0K
+R29vZ2xlIEFjY291bnQgYW5kIHNlcnZpY2VzLg0KwqkgMjAyMyBHb29nbGUgSXJlbGFuZCBMdGQu
+LCBHb3Jkb24gSG91c2UsIEJhcnJvdyBTdHJlZXQsIER1YmxpbiA0LCBJcmVsYW5kDQo=
+--000000000000b4018a05f3508573
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html lang=3D"en"><head><meta name=3D"format-detection" cont=
+ent=3D"email=3Dno"/><meta name=3D"format-detection" content=3D"date=3Dno"/>=
+<style nonce=3D"ciN-0nWX2yDzA9-WWG5v1A">.awl a {color: #FFFFFF; text-decora=
+tion: none;} .abml a {color: #000000; font-family: Roboto-Medium,Helvetica,=
+Arial,sans-serif; font-weight: bold; text-decoration: none;} .adgl a {color=
+: rgba(0, 0, 0, 0.87); text-decoration: none;} .afal a {color: #b0b0b0; tex=
+t-decoration: none;} @media screen and (min-width: 600px) {.v2sp {padding: =
+6px 30px 0px;} .v2rsp {padding: 0px 10px;}} @media screen and (min-width: 6=
+00px) {.mdv2rw {padding: 40px 40px;}} </style><link href=3D"//fonts.googlea=
+pis.com/css?family=3DGoogle+Sans" rel=3D"stylesheet" type=3D"text/css" nonc=
+e=3D"ciN-0nWX2yDzA9-WWG5v1A"/></head><body style=3D"margin: 0; padding: 0;"=
+ bgcolor=3D"#FFFFFF"><table width=3D"100%" height=3D"100%" style=3D"min-wid=
+th: 348px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" lang=3D"en"><t=
+r height=3D"32" style=3D"height: 32px;"><td></td></tr><tr align=3D"center">=
+<td><div itemscope itemtype=3D"//schema.org/EmailMessage"><div itemprop=3D"=
+action" itemscope itemtype=3D"//schema.org/ViewAction"><link itemprop=3D"ur=
+l" href=3D"https://accounts.google.com/AccountChooser?Email=3Ddimitrischr0@=
+gmail.com&amp;continue=3Dhttps://myaccount.google.com/alert/nt/167490204900=
+0?rfn%3D127%26rfnc%3D1%26eid%3D-3508491804140357690%26et%3D0"/><meta itempr=
+op=3D"name" content=3D"Review Activity"/></div></div><table border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" style=3D"padding-bottom: 20px; max-width:=
+ 516px; min-width: 220px;"><tr><td width=3D"8" style=3D"width: 8px;"></td><=
+td><div style=3D"border-style: solid; border-width: thin; border-color:#dad=
+ce0; border-radius: 8px; padding: 40px 20px;" align=3D"center" class=3D"mdv=
+2rw"><img src=3D"https://www.gstatic.com/images/branding/googlelogo/2x/goog=
+lelogo_color_74x24dp.png" width=3D"74" height=3D"24" aria-hidden=3D"true" s=
+tyle=3D"margin-bottom: 16px;" alt=3D"Google"><div style=3D"font-family: &#3=
+9;Google Sans&#39;,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;border-bot=
+tom: thin solid #dadce0; color: rgba(0,0,0,0.87); line-height: 32px; paddin=
+g-bottom: 24px;text-align: center; word-break: break-word;"><div style=3D"f=
+ont-size: 24px;"><a>Mozilla Thunderbird Email</a> was granted access to you=
+r Google&nbsp;Account </div><table align=3D"center" style=3D"margin-top:8px=
+;"><tr style=3D"line-height: normal;"><td align=3D"right" style=3D"padding-=
+right:8px;"><img width=3D"20" height=3D"20" style=3D"width: 20px; height: 2=
+0px; vertical-align: sub; border-radius: 50%;;" src=3D"https://lh3.googleus=
+ercontent.com/a/AEdFTp7JKiCWACKgP4-TSVijoevFujJg9X1ILzixHlnQUA=3Ds96" alt=
+=3D""></td><td><a style=3D"font-family: &#39;Google Sans&#39;,Roboto,Roboto=
+Draft,Helvetica,Arial,sans-serif;color: rgba(0,0,0,0.87); font-size: 14px; =
+line-height: 20px;">dimitrischr0@gmail.com</a></td></tr></table> </div><div=
+ style=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-serif; font-size=
+: 14px; color: rgba(0,0,0,0.87); line-height: 20px;padding-top: 20px; text-=
+align: left;"><br>If you did not grant access, you should check this activi=
+ty and secure your account.<div style=3D"padding-top: 32px; text-align: cen=
+ter;"><a href=3D"https://accounts.google.com/AccountChooser?Email=3Ddimitri=
+schr0@gmail.com&amp;continue=3Dhttps://myaccount.google.com/alert/nt/167490=
+2049000?rfn%3D127%26rfnc%3D1%26eid%3D-3508491804140357690%26et%3D0" target=
+=3D"_blank" link-id=3D"main-button-link" style=3D"font-family: &#39;Google =
+Sans&#39;,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; line-height: 16px;=
+ color: #ffffff; font-weight: 400; text-decoration: none;font-size: 14px;di=
+splay:inline-block;padding: 10px 24px;background-color: #4184F3; border-rad=
+ius: 5px; min-width: 90px;">Check activity</a></div></div><div style=3D"pad=
+ding-top: 20px; font-size: 12px; line-height: 16px; color: #5f6368; letter-=
+spacing: 0.3px; text-align: center">You can also see security activity at<b=
+r><a style=3D"color: rgba(0, 0, 0, 0.87);text-decoration: inherit;">https:/=
+/myaccount.google.com/notifications</a></div></div><div style=3D"text-align=
+: left;"><div style=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-ser=
+if;color: rgba(0,0,0,0.54); font-size: 11px; line-height: 18px; padding-top=
+: 12px; text-align: center;"><div>You received this email to let you know a=
+bout important changes to your Google Account and services.</div><div style=
+=3D"direction: ltr;">&copy; 2023 Google Ireland Ltd., <a class=3D"afal" sty=
+le=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-serif;color: rgba(0,=
+0,0,0.54); font-size: 11px; line-height: 18px; padding-top: 12px; text-alig=
+n: center;">Gordon House, Barrow Street, Dublin 4, Ireland</a></div></div><=
+/div></td><td width=3D"8" style=3D"width: 8px;"></td></tr></table></td></tr=
+><tr height=3D"32" style=3D"height: 32px;"><td></td></tr></table></body></h=
+tml>
+--000000000000b4018a05f3508573--
+From - Sat Jan 28 12:34:11 2023
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: dimitrischr0@gmail.com
+Received: by 2002:a2e:83cd:0:0:0:0:0 with SMTP id s13csp1345914ljh;
+        Sat, 28 Jan 2023 02:30:21 -0800 (PST)
+X-Google-Smtp-Source: AK7set/KqAd+extSoNPXVHOWaso0MzdHniySuS9TjSiQ5mQiiA6Ysg1hSR6CNyvo+H4sZ7C5wwIQ
+X-Received: by 2002:a5d:6d03:0:b0:2bf:b3ee:4a19 with SMTP id e3-20020a5d6d03000000b002bfb3ee4a19mr19817397wrq.9.1674901820875;
+        Sat, 28 Jan 2023 02:30:20 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1674901820; cv=none;
+        d=google.com; s=arc-20160816;
+        b=a/XmBxFjdbwt216nKF6Hne1FrFrv31N6SsID6UT2l00jdJEv97/XlBJWnEr9Npd8Eo
+         OAWUFq6GeWJdIC9lGBfkVmVGfvvZMnZAP02miZ+qibbnX5ylPLCxFtVpFzqQGj+1ZY8V
+         P4Zg/Wl7Nn0FMa4NnQRTOFRUjETkFWnrpBL7FsClUIOguC3Lg8lRLT7KTjsnBlzH1voH
+         /H3w293d/v9s3X7WZOvyTMG21zePn/EEct68OcDTZ8WdrVSI0u0h1bWbEdhYtjgkdHy/
+         t0E3ZtqBEo6VJ7ajRgbIR0M+LOMO59AiHGMCAkymV4SJn+FBJ+C87r/Kit5W5VhzElav
+         Kcvg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to
+         :reply-to:from:date:dkim-signature;
+        bh=4UQuaEbHuZH8Z7MxhjqEXtuheSB9W1HgUByfhh0egFI=;
+        b=rrqa8yHY7J31GvolpeF6755SPe6/LTzUfFBr33WvZwLsDcUQzJOZYMebyTC00NUCck
+         GWaqnmW0JmFh7/m9FUpTeTbQEdTUlmigjeKxlrIdvuzHKf6fhW3R6I0uYFTOeiK3M2dL
+         o3LHRRGqcDRA5thHV9d+u/bxrIi0djvlAqQdopi4MYYrLWaD+BTysPR9wPSqFnw7HcmJ
+         A9uJAby8Ix/IlkqTKBMmEu1HPRdwVlRNwnR4MREufAAFZ8SMeoQHqQFemH1YWlK0OQ01
+         XeR1lDxqLCds51Tq5sBevw5ny/yAPkU1BSuwyIeOInd89PohFJZRJl7rBBREIEFylSxf
+         oAPw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cc.yahoo-inc.com header.s=fz2048 header.b=rLULJkYF;
+       spf=pass (google.com: domain of accounts@returns.bulk.yahoo.com designates 87.248.110.142 as permitted sender) smtp.mailfrom=accounts@returns.bulk.yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=cc.yahoo-inc.com
+Return-Path: <accounts@returns.bulk.yahoo.com>
+Received: from sonic316-54.consmr.mail.ir2.yahoo.com (sonic316-54.consmr.mail.ir2.yahoo.com. [87.248.110.142])
+        by mx.google.com with ESMTPS id m11-20020a5d6a0b000000b002be39ebf60bsi6789605wru.549.2023.01.28.02.30.20
+        for <dimitrischr0@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sat, 28 Jan 2023 02:30:20 -0800 (PST)
+Received-SPF: pass (google.com: domain of accounts@returns.bulk.yahoo.com designates 87.248.110.142 as permitted sender) client-ip=87.248.110.142;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cc.yahoo-inc.com header.s=fz2048 header.b=rLULJkYF;
+       spf=pass (google.com: domain of accounts@returns.bulk.yahoo.com designates 87.248.110.142 as permitted sender) smtp.mailfrom=accounts@returns.bulk.yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=cc.yahoo-inc.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cc.yahoo-inc.com; s=fz2048; t=1674901820; bh=4UQuaEbHuZH8Z7MxhjqEXtuheSB9W1HgUByfhh0egFI=; h=Date:From:Reply-To:To:Subject:From:Subject:Reply-To; b=rLULJkYFjWKtVAFHPJvZ+wXk2q1SLWK0g5MWc/c5rMDNuI5f5xQsi5POmBH30z6NPF3o7TCg/fJUwcWTjF3AzfNt6lnYAx/XbZJTR+45Azi9NrrCjTWLdl2RUqK4pZhSDKXBCbxmiEYH5paiHiWBsXM/iKq2Og1orChrVSo0keWOS79yGur05dxxh4hXFklGHuFFOelftPDDnJwUW1TaB+2FDMDITQFl6fEpkVXN+f9eD2ivGgDwrsExtPIsoM+EIHSTIvXGJVf5qM18sjLj00FAVZdaK1IwD3Xs8Q7vmckTl2TWhnk9U6OItR4dkQf+SchCfTdCZKfzplmvKw5fsQ==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1674901820; bh=86htRx+oC9Q0IsQ9AAPGniJn78AoyiLYX5hwbujgvOa=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=mTN2jNE+By7QMhmzhc/vxgCi60jl/8tZKQYaRQtGFg+h5EDN+ryder8impyYgYj1CJqtuE70SKV/xtu8oS7v1+tzcWkX1+1W0hzsGaCFAdMQ6a7pv6+3cMCH+aLQTODm+iNoMYVG0aLXqCoz+am1DU+R08yObrYr3mAt4Y4S1zdw+LOihElYqMh9XBJOSNQDCVkcvsiun7KJtzTSL8D0ikOaLRCF4/TUK0xYeefeNKMHSnIyQXqY4ol6QvT13bcEN0YJnFqqFrdVJz4TCtw6gKjxl4xGawpt1PAG8JPnDaImkmVY7W0s7/L/mhrHQVHDW204VPdDiQkUvpsSs+VCEA==
+X-Sonic-MF: accounts@returns.bulk.yahoo.com
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic316.consmr.mail.ir2.yahoo.com with HTTP; Sat, 28 Jan 2023 10:30:20 +0000
+Date: Sat, 28 Jan 2023 10:30:17 +0000 (UTC)
+From: Yahoo <no-reply@cc.yahoo-inc.com>
+Reply-To: Yahoo <no-reply@cc.yahoo-inc.com>
+To: dimitrischr0@gmail.com
+Message-ID: <353116587.511.1674901817294@api124.oauth.member.ir2.yahoo.com>
+Subject: New sign in on thunderbird
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        html {
+        -webkit-text-size-adjust:none;
+        }
+        body {
+        width:100%;
+        margin:0 auto;
+        padding:0;
+        }
+        p {
+        width:280px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        }
+        a {
+        text-decoration: none;
+        color: #3492ff;
+        }
+        li {
+        width: 280px;
+        }
+    </style>
+    
+</head>
+<body style="font-family:Helvetica Neue;">
+<div>
+    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#f4f3f8" style="table-layout:fixed; padding: 5px 10px;" dir="ltr">
+        <tbody>
+        <tr>
+            <td align="center" valign="top" style="min-width:420px;">
+                <!-- Email header table -->
+                <table cellspacing="0" cellpadding="0" width="420" height="50" bgcolor="#ffffff">
+                    <tr>
+                        <td align="left" style="padding: 22px;">
+                            <img src="https://s.yimg.com/rz/stage/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png" style="display:block; border:0; margin-top:10px;" width="100" alt="Yahoo"/>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Email body table -->
+                <table cellspacing="0" cellpadding="0" width="420" bgcolor="#ffffff">
+                    <!-- Salutation row -->
+                    <tr>
+                        <td style="padding-left: 22px;">
+                            <div style="font-size: 12px;">
+                                <p style="color: #000000; margin:0px;"><b>Hi Dimitris,</b></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Main content row -->
+                    <tr>
+                        <td style="padding-left: 22px;">
+                            <!-- Additional info table -->
+                            <div style="font-family: HelveticaNeue;
+                                        font-size: 12px;
+                                        color: #26282A;
+                                        line-height: 16px;">
+                                <p style="margin-top: 30px;">Your Yahoo account dimitrisucy was just used to sign in on thunderbird.</p>
+                            </div>
+                            <div style="font-family: HelveticaNeue;
+                                        font-size: 12px;
+                                        color: #26282A;
+                                        line-height: 16px;">
+                                <p>If you did this, you&rsquo;re all set.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Additional info row 1-->
+                    <tr>
+                        <td style="padding-left: 22px;">
+                            <!-- Additional info table -->
+                            <div style="font-family: HelveticaNeue;
+                                        font-size: 12px;
+                                        color: #26282A;
+                                        line-height: 16px;">
+                                <p style="margin-top: 15px; margin-bottom: 5px;">If not, please use <a href='https://login.yahoo.com/account/activity#authorized-apps'>this link</a> to stop sharing, and create a new password.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Additional info row 2-->
+                    <tr>
+                        <td style="padding-left: 22px;">
+                            <!-- Additional info table -->
+                            <div style="font-family: HelveticaNeue;
+                                        font-size: 12px;
+                                        color: #26282A;
+                                        line-height: 16px;">
+                                <p style="margin-top: 15px; margin-bottom: 5px;">Have a great day!</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- From row -->
+                    <tr>
+                        <td style="padding-left: 22px;">
+                            <div style="font-family: HelveticaNeue;
+                                   font-size: 12px;
+                                   color: #000000;
+                                   line-height: 16px;">
+                                <p style="margin-top: 30px; margin-bottom: 3px;">
+                                    Thanks,
+                                </p>
+                                <p style="margin: 0px;">
+                                    <b>Yahoo</b>
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Footer -->
+                <table cellspacing="0" cellpadding="0" width="420" bgcolor="#ffffff" style="font-size:10px; line-height:20px; color:#000000; text-align:left;">
+                    <tr>
+                        <td style="padding-left: 22px; color: #878C91; padding-top: 30px;">
+                            <div style="margin-top: 10px; margin-bottom: 20px; width: 250px;">
+                                <p>Replies sent to this email cannot be answered.</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+From - Sat Jan 28 12:34:11 2023
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: dimitrischr0@gmail.com
+Received: by 2002:a2e:83cd:0:0:0:0:0 with SMTP id s13csp1345811ljh;
+        Sat, 28 Jan 2023 02:29:53 -0800 (PST)
+X-Google-Smtp-Source: AMrXdXt1vu/dWftcMW5C53ER8qbiHZHe87doctytSQ9Xbd3IFZw0gUhpu2JgJWz8Pys5YF6leMPg
+X-Received: by 2002:a05:600c:1f0e:b0:3db:2098:17c0 with SMTP id bd14-20020a05600c1f0e00b003db209817c0mr35725944wmb.29.1674901793421;
+        Sat, 28 Jan 2023 02:29:53 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1674901793; cv=none;
+        d=google.com; s=arc-20160816;
+        b=ln8sJt/C/oupDNEBM2Zkhazlos2ufHZLQujpgh6qzXd6RjKJgDCVQGcr2DtbNdP1Zd
+         tnV9QN+q4j2y99+Pk7vubGCoEz1Lc2hmScb6Nq6/TPEtnt9RFxHB+xBh7owpbS3yyoXh
+         ypdklVPfUVRtTO/kVKHzGVV4fe1V3PzBXKOPFgAyqT6OTaobiSv6LBRULLBrTYM34eCv
+         hIlQYW1/EwrEmT0uk4lz0R6Pje7n39Zbi6kl3wumAfbX6+9rS9DT+Q9fsQIvKhiEYURd
+         n4Dc3rhEMnRw+okifQpU2jfvzNohR8lxV4KVUUa9zKdbhsqgL9u3jCObmTjjYQ6Gbwu3
+         77bg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to
+         :reply-to:from:date:dkim-signature;
+        bh=Z4zuNT6RfZD4Y54bz8OLTZ3B5QoePYQQ54k6glM46QY=;
+        b=x5MNxLi6E1CfzPeCDFhSJUESSEtAiRxNycq9z7G5O+FHxxjS8MTZDmCuf54GMBJ877
+         p6qy1VaICEyrZd4esWsLAijaAJi2geBes9ryMYkPUUrsyQJPSiHEgc20nBEVDUfTjmXY
+         eMweu+V54pSVynBihyuIBq+XJ71Zou7jHq9A6HkwxjoMRynVHb479SxEyXoDWGf2pph5
+         4Mkjmk0WXxz2b8P80lTvLIcktXkwy27tSTDuhsZui3qHJd+Te2DIEFJxW7NmNMlTqFn8
+         5kTAwra6cyCWEhgDG4rzthoe6XnLufE1lLPcQwaN/T7pYlj1EYa4u/8c/XXauHkVzK1z
+         QNlw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cc.yahoo-inc.com header.s=fz2048 header.b=aYF9UQUA;
+       spf=pass (google.com: domain of accounts@returns.bulk.yahoo.com designates 77.238.178.22 as permitted sender) smtp.mailfrom=accounts@returns.bulk.yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=cc.yahoo-inc.com
+Return-Path: <accounts@returns.bulk.yahoo.com>
+Received: from sonic318-39.consmr.mail.ir2.yahoo.com (sonic318-39.consmr.mail.ir2.yahoo.com. [77.238.178.22])
+        by mx.google.com with ESMTPS id i5-20020a05600c354500b003dc1c701836si8603536wmq.78.2023.01.28.02.29.53
+        for <dimitrischr0@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sat, 28 Jan 2023 02:29:53 -0800 (PST)
+Received-SPF: pass (google.com: domain of accounts@returns.bulk.yahoo.com designates 77.238.178.22 as permitted sender) client-ip=77.238.178.22;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cc.yahoo-inc.com header.s=fz2048 header.b=aYF9UQUA;
+       spf=pass (google.com: domain of accounts@returns.bulk.yahoo.com designates 77.238.178.22 as permitted sender) smtp.mailfrom=accounts@returns.bulk.yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=cc.yahoo-inc.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cc.yahoo-inc.com; s=fz2048; t=1674901793; bh=Z4zuNT6RfZD4Y54bz8OLTZ3B5QoePYQQ54k6glM46QY=; h=Date:From:Reply-To:To:Subject:From:Subject:Reply-To; b=aYF9UQUAerZjRkPa/ySJhsAXSaLJytBRGLpQDKIezCQrlPzYSt8Q5aP85rrZltxpQNWx0us+OV7o+Vsdkfh1LbSNBz+K1FxnTO+4eQlUu+iotDUIawQqAqKoVJRzWlTMVNwJT5AuBXyvcaTuwosgXeAb59/Ph0ZRmVNVBDwVAQjLZlrSpnLg5d3/Sq2TBaL6bddAAJrINPPjMBkTZkn7RSdQ/6jTbDremd041oFfDZL8fQ2NpkaonM+hiwOF/t9ncZdCBixvu2KEpE/P42lM0TCFKv4iU6HIWLUjW9D6wagqt9aNXbr41JSp170Jc2HrsBuaKY5dvgyeMdjnlTuP+Q==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1674901793; bh=28P8ifxnQsaLuF179IYUfyWcrRus1GjHwiHoaz21D+m=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=Nl5JhaoNKhJoG0wc51b/PEqRA8dmx/Se0u2X5/3j488Y2Z9eITJX9RiPXJekgl332MZ8YIOXBbgTX+foBA1MMlRyNBPnUkqGktQdFmpq4COJrn4aVxVEN9aZYHYPwpgzvCmKqCKj7hev98L4ydjK6858We0QJfzw6lp2WQ0KJWFvlMoG16ajOFYPurqZQdcxYULaAfHO+aAyMJilCZNz2vGBUY6zbD3QArgPAE5e3j4DA53ujPaiRdtev9g8/XL8bK45atYs5LnGWnWcyh8Tp9MSv2fnL8yUxZYeWebHO8ZF/uzQyA1xCx7oxnrr0Za4RT00JdpJU1VCGAFA3SdX7w==
+X-Sonic-MF: accounts@returns.bulk.yahoo.com
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic318.consmr.mail.ir2.yahoo.com with HTTP; Sat, 28 Jan 2023 10:29:53 +0000
+Date: Sat, 28 Jan 2023 10:29:51 +0000 (UTC)
+From: Yahoo <no-reply@cc.yahoo-inc.com>
+Reply-To: Yahoo <no-reply@cc.yahoo-inc.com>
+To: dimitrischr0@gmail.com
+Message-ID: <1420823519.8005.1674901791838@be109.member.ir2.yahoo.com>
+Subject: Your Yahoo verification code is ZFSM
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        html {
+        -webkit-text-size-adjust:none;
+        }
+        body {
+        width:100%;
+        margin:0 auto;
+        padding:0;
+        }
+        p {
+        width: 280px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+       }
+    </style>
+    <title>Your Yahoo verification code is ZFSM</title>
+</head>
+<body style="font-family:Helvetica Neue;">
+<div>
+    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#f4f3f8" style="table-layout:fixed; padding: 5px 10px;" dir="ltr">
+        <tbody>
+        <tr>
+            <td align="center" valign="top" style="min-width:420px;">
+                <!-- Email header table -->
+                <table cellspacing="0" cellpadding="0" width="420" height="50" bgcolor="#ffffff">
+                    <tr>
+                        <td align="left" style="padding: 30px;">
+                            <img src="https://s.yimg.com/rz/stage/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png" style="display:block; border:0;" width="100" alt="Yahoo"/>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Email body table -->
+                <table cellspacing="0" cellpadding="0" width="420" bgcolor="#ffffff">
+                    <!-- Salutation row -->
+                    <tr>
+                        <td style="padding-left: 30px;">
+                            <div style="font-size: 12px;">
+                                <p style="color: #000000; margin:0px;"><b>Hi Dimitris,</b></p>
+                                <p style="color: #000000; margin:0px; line-height:20px;">dimitrisucy@yahoo.gr</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Main content row -->
+                    <tr>
+                        <td style="padding-left: 30px;">
+                            <!-- Main content table -->
+                            <table cellspacing="0" cellpadding="0" width="390" style="font-size: 12px; line-height: 16px;">
+                                <tr>
+                                    <td valign="middle" height="72">
+                                        <div style=" font-size: 12px; color: #26282A; letter-spacing: 0.5px; line-height: 16px; margin-top: 20px";>
+                                            <p style="margin: 0px"><b>Are you trying to sign in?</b></p>
+                                            <p style="margin: 0px">If so, use this code to finish signing in.</p>
+                                            <p style="font-size: 20px; margin-top: 20px">
+                                                <b><b>ZFSM</b></b>
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Device info row -->
+                    <tr>
+                        <td style="padding-left: 30px;">
+                            <!-- Device info table -->
+                            <p style="font-family: HelveticaNeue-Bold; font-size: 12px; color: #26282A; letter-spacing: 0.5px; margin-top: 20px;">
+                                <b>This sign in attempt was made on:</b>
+                            </p>
+                            <table cellspacing="0" cellpadding="0" width="390" style="font-family: HelveticaNeue;
+                            word-wrap: break-word;
+                            font-size: 12px;
+                            line-height: 24px;
+                            table-layout: fixed;
+                            letter-spacing: 0;
+                            color: #9A9A9A;">
+                                <tr>
+                                    <td style="width: 20%">
+                                        <p style="width: 78px">Device</p>
+                                    </td>
+                                    <td style="color: #26282A;
+                                        letter-spacing: -0.22px;">
+                                        virtual gecko, linux
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div><p style="width: 78px">When</p></div>
+                                    </td>
+                                    <td style="color: #26282A;
+                                        letter-spacing: -0.22px;">
+                                        <div>January 28, 2023 at 2:29:51 AM PST</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p style="width: 78px">Where*</p>
+                                    </td>
+                                    <td style="color: #26282A; letter-spacing: -0.22px;">
+                                        <p style="margin: 0px">Cyprus</p>
+                                        <p style="line-height: 1; margin: 0px; font-size: 9px;">69.6.27.56</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Additional info row -->
+                    <tr>
+                        <td style="padding-left: 30px;">
+                            <!-- Additional info table -->
+                            <div style="font-family: HelveticaNeue;
+                                        font-size: 12px;
+                                        color: #26282A;
+                                        line-height: 16px;">
+                                <p style="margin-top: 20px; margin-bottom: 0px;"><b>Didn&rsquo;t sign in recently?</b></p>
+                                <p style="margin-top: 0px; margin-bottom: 0px;">Review your account activity and remove the devices and apps that you don&rsquo;t recognize.</p>
+                                <a href="https://login.yahoo.com/account/activity" target="_blank" style="color:#3492ff;text-decoration:none;">https://login.yahoo.com/account/activity</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- From row -->
+                    <tr>
+                        <td style="padding-left: 30px;">
+                            <div style="font-family: HelveticaNeue;
+                                   font-size: 12px;
+                                   color: #000000;
+                                   letter-spacing: 0.5px;
+                                   line-height: 16px;">
+                                <p style="margin-top: 20px; margin-bottom: 0px;">
+                                    Thanks,
+                                </p>
+                                <p style="margin: 0px;">
+                                    <b>Yahoo</b>
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Footer -->
+                <table cellspacing="0" cellpadding="0" width="420" bgcolor="#ffffff" style="font-size:10px; line-height:14px; color:#000000; text-align:left;">
+                    <tr>
+                        <td style="padding-left: 30px; color: #878C91;">
+                            <div style="margin-top: 20px; margin-bottom: 3px; width: 250px;">
+                                <p>We will never ask you for your password in an email. If you don&rsquo;t trust a link in an email, go directly to the normal sign in page via yahoo.com.</p>
+                            </div>
+                            <div style="margin-top: 10px; margin-bottom:20px">
+                                <p>*Location is approximate based on the IP address it originated from.</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+From - Sun Jul 16 10:51:41 2023
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: dimitrischr0@gmail.com
+Received: by 2002:a2e:a169:0:b0:2b7:3473:3018 with SMTP id u9csp1168530ljl;
+        Sun, 16 Jul 2023 00:51:36 -0700 (PDT)
+X-Google-Smtp-Source: APBJJlHrKIP6LOyQ8+TBIL2tMnd1PxH07hws/A6KXYI2BDLb3OtfAamj52bIPuFZvmszLknvJuBH
+X-Received: by 2002:a5d:690e:0:b0:315:92ce:e218 with SMTP id t14-20020a5d690e000000b0031592cee218mr9791150wru.41.1689493896562;
+        Sun, 16 Jul 2023 00:51:36 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1689493896; cv=none;
+        d=google.com; s=arc-20160816;
+        b=hLzMzqh2u0KcJ4NpfEECH2s9slQxLb7S3DgAwpLpwfHYTqN/KaRzVd5hTbOggTR5Ee
+         KQTpmyTKCwwh5LoBp+FjhX92KBr/DmVUta8u3ylIdiPAv7E4FGr3kwoiiQcqGFqMhLAK
+         f75+0vcbbhF2ARyzOeia/EUOmIN2dUmamBav7ZYOFzJIMEONNRG0S9qq33b9Q589nRoD
+         EjBwjuNf4oLOvfkBk8TJIO/PWBP0QmawiN+8A+l/Phbzn5oCYHsy4GjowS0kdsfmmFxy
+         5FtRp2lrH1LPw62Ekxd9xAstkySnHgPLqQjrw870G//Rofqg5zsgLiO4Gj0OnxHrEdp6
+         oZTQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to
+         :reply-to:from:date:dkim-signature;
+        bh=Bq/GpVdKQ5pco1GZV/zF8QC/flZYATk2kLfLjf3AZWE=;
+        fh=fC82dvy7H341WUNYEvfuaG02/9ENpvh2HIvyPuagf+o=;
+        b=D8tdFk7tgxi+BhwQ3Fnz2AILHsUpgJUYsCGiGhKSA1G9LG8ooqz5lQBpdflmizazwM
+         TFOKCCw0fnb5NxLbEtxmH8wEwsHqj8YDAff0VVkVdyjdMEL/9QAhADEQu2jQdg+cyAUS
+         yQipvGo8sH4xv3ZnyL7SaeJdxvum3fyi7IJ7MMZj8urzCsqKJyuvT+xK3X7XS8y+zzvq
+         OaqhKZ+OWt6jH6avNh3yBZfp/sgZxwNF3D2ramk0kFloaCpTbdTTTzhFuPQME0aXmx1C
+         133eAkBmaU0u3OPyBC7Rxgc0/F5CbheqJGExWsh7Mi+iqkB+FWd+kllOuWRtOw7s/bNW
+         GXcQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cc.yahoo-inc.com header.s=fz2048 header.b="fD//sVkJ";
+       spf=pass (google.com: domain of accounts@returns.bulk.yahoo.com designates 77.238.178.22 as permitted sender) smtp.mailfrom=accounts@returns.bulk.yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=cc.yahoo-inc.com
+Return-Path: <accounts@returns.bulk.yahoo.com>
+Received: from sonic318-39.consmr.mail.ir2.yahoo.com (sonic318-39.consmr.mail.ir2.yahoo.com. [77.238.178.22])
+        by mx.google.com with ESMTPS id t5-20020a5d4605000000b0030fcf7cf2c5si6879956wrq.916.2023.07.16.00.51.36
+        for <dimitrischr0@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sun, 16 Jul 2023 00:51:36 -0700 (PDT)
+Received-SPF: pass (google.com: domain of accounts@returns.bulk.yahoo.com designates 77.238.178.22 as permitted sender) client-ip=77.238.178.22;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cc.yahoo-inc.com header.s=fz2048 header.b="fD//sVkJ";
+       spf=pass (google.com: domain of accounts@returns.bulk.yahoo.com designates 77.238.178.22 as permitted sender) smtp.mailfrom=accounts@returns.bulk.yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=cc.yahoo-inc.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cc.yahoo-inc.com; s=fz2048; t=1689493896; bh=Bq/GpVdKQ5pco1GZV/zF8QC/flZYATk2kLfLjf3AZWE=; h=Date:From:Reply-To:To:Subject:From:Subject:Reply-To; b=fD//sVkJm9qrBLu7TWaZOveiNc+MZCcVtqCAkZ0/Qf2jdtF6PJ/UVyVWgM5dh0+U/LxCluNT0Hkm2cf2tJhzpW+tJKeRvmo1hvClUoByD5CMKwNHshPrNp5ITK+EmAQ4qgtvtJkYXZIHxp2+meydgGGmFK90n+JFpEib9tSYjuO32a4YAjzkK6yYPgpQ5iJoWFgUPg5IJ0grLhSdxtdQclSj/39vu6W0a92JWcdyxKJuSeKppCVuJqT2HCp9XL079gJSGUmvoSCKemsvfBUznTfFJsbxBXiUEdQR96PAbZhkZzPHHZe36MqsqL7ien6l+4zMDnchNdpiyZtyg2Pimg==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1689493896; bh=gycvXEoDT3ozhtqcohzlXRB//L+Xu1g6g3o2BreOKP4=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=SF+Kb8waYfUPyXr6G00AaKZFhoBumR4Yvw/qGFJwqXQooaGW1p1zTGFJfOmyC2hs7m2XT2Yd7tqbaH2fq0jWErJASuunRZjPjMng+VHm5JvaZRyQJRQEMCykmIyM2R+5dJu9eztTfk0NMehdcpUKd7c0QKMrlIQ+A8N5a+mwZpnwwFFVw45NlENyXublKI9pGUxZAj5f4Lm0DQXnTV1bfz765Fj3t7rZry2hNZI9Pj/WgVYtC8Kl+hmMPE9gOKe7/3GYw0ynJCzbx3If4ixp1OIeHAXGa+jPMOTTUCD53ANb8S1S9g3IAIlAPScFUNMF4Pp86gm53fjjuYrPw4aRkw==
+X-Sonic-MF: accounts@returns.bulk.yahoo.com
+X-Sonic-ID: d991b115-ddbb-4444-a2d0-3582f20f40e2
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic318.consmr.mail.ir2.yahoo.com with HTTP; Sun, 16 Jul 2023 07:51:36 +0000
+Date: Sun, 16 Jul 2023 07:51:33 +0000 (UTC)
+From: Yahoo <no-reply@cc.yahoo-inc.com>
+Reply-To: Yahoo <no-reply@cc.yahoo-inc.com>
+To: dimitrischr0@gmail.com
+Message-ID: <1346469257.31524.1689493893284@be110.member.ir2.yahoo.com>
+Subject: Your Yahoo verification code is PUXE
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        html {
+        -webkit-text-size-adjust:none;
+        }
+        body {
+        width:100%;
+        margin:0 auto;
+        padding:0;
+        }
+        p {
+        width: 280px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+       }
+    </style>
+    <title>Your Yahoo verification code is PUXE</title>
+</head>
+<body style="font-family:Helvetica Neue;">
+<div>
+    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#f4f3f8" style="table-layout:fixed; padding: 5px 10px;" dir="ltr">
+        <tbody>
+        <tr>
+            <td align="center" valign="top" style="min-width:420px;">
+                <!-- Email header table -->
+                <table cellspacing="0" cellpadding="0" width="420" height="50" bgcolor="#ffffff">
+                    <tr>
+                        <td align="left" style="padding: 30px;">
+                            <img src="https://s.yimg.com/rz/stage/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png" style="display:block; border:0;" width="100" alt="Yahoo"/>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Email body table -->
+                <table cellspacing="0" cellpadding="0" width="420" bgcolor="#ffffff">
+                    <!-- Salutation row -->
+                    <tr>
+                        <td style="padding-left: 30px;">
+                            <div style="font-size: 12px;">
+                                <p style="color: #000000; margin:0px;"><b>Hi Dimitris,</b></p>
+                                <p style="color: #000000; margin:0px; line-height:20px;">dimitrisucy@yahoo.gr</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Main content row -->
+                    <tr>
+                        <td style="padding-left: 30px;">
+                            <!-- Main content table -->
+                            <table cellspacing="0" cellpadding="0" width="390" style="font-size: 12px; line-height: 16px;">
+                                <tr>
+                                    <td valign="middle" height="72">
+                                        <div style=" font-size: 12px; color: #26282A; letter-spacing: 0.5px; line-height: 16px; margin-top: 20px";>
+                                            <p style="margin: 0px"><b>Are you trying to sign in?</b></p>
+                                            <p style="margin: 0px">If so, use this code to finish signing in.</p>
+                                            <p style="font-size: 20px; margin-top: 20px">
+                                                <b><b>PUXE</b></b>
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Device info row -->
+                    <tr>
+                        <td style="padding-left: 30px;">
+                            <!-- Device info table -->
+                            <p style="font-family: HelveticaNeue-Bold; font-size: 12px; color: #26282A; letter-spacing: 0.5px; margin-top: 20px;">
+                                <b>This sign in attempt was made on:</b>
+                            </p>
+                            <table cellspacing="0" cellpadding="0" width="390" style="font-family: HelveticaNeue;
+                            word-wrap: break-word;
+                            font-size: 12px;
+                            line-height: 24px;
+                            table-layout: fixed;
+                            letter-spacing: 0;
+                            color: #9A9A9A;">
+                                <tr>
+                                    <td style="width: 20%">
+                                        <p style="width: 78px">Device</p>
+                                    </td>
+                                    <td style="color: #26282A;
+                                        letter-spacing: -0.22px;">
+                                        virtual gecko, linux
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div><p style="width: 78px">When</p></div>
+                                    </td>
+                                    <td style="color: #26282A;
+                                        letter-spacing: -0.22px;">
+                                        <div>July 16, 2023 at 12:51:33 AM PDT</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p style="width: 78px">Where*</p>
+                                    </td>
+                                    <td style="color: #26282A; letter-spacing: -0.22px;">
+                                        <p style="margin: 0px">Cyprus</p>
+                                        <p style="line-height: 1; margin: 0px; font-size: 9px;">69.6.27.56</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Additional info row -->
+                    <tr>
+                        <td style="padding-left: 30px;">
+                            <!-- Additional info table -->
+                            <div style="font-family: HelveticaNeue;
+                                        font-size: 12px;
+                                        color: #26282A;
+                                        line-height: 16px;">
+                                <p style="margin-top: 20px; margin-bottom: 0px;"><b>Didn&rsquo;t sign in recently?</b></p>
+                                <p style="margin-top: 0px; margin-bottom: 0px;">Review your account activity and remove the devices and apps that you don&rsquo;t recognize.</p>
+                                <a href="https://login.yahoo.com/account/activity" target="_blank" style="color:#3492ff;text-decoration:none;">https://login.yahoo.com/account/activity</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- From row -->
+                    <tr>
+                        <td style="padding-left: 30px;">
+                            <div style="font-family: HelveticaNeue;
+                                   font-size: 12px;
+                                   color: #000000;
+                                   letter-spacing: 0.5px;
+                                   line-height: 16px;">
+                                <p style="margin-top: 20px; margin-bottom: 0px;">
+                                    Thanks,
+                                </p>
+                                <p style="margin: 0px;">
+                                    <b>Yahoo</b>
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Footer -->
+                <table cellspacing="0" cellpadding="0" width="420" bgcolor="#ffffff" style="font-size:10px; line-height:14px; color:#000000; text-align:left;">
+                    <tr>
+                        <td style="padding-left: 30px; color: #878C91;">
+                            <div style="margin-top: 20px; margin-bottom: 3px; width: 250px;">
+                                <p>We will never ask you for your password in an email. If you don&rsquo;t trust a link in an email, go directly to the normal sign in page via yahoo.com.</p>
+                            </div>
+                            <div style="margin-top: 10px; margin-bottom:20px">
+                                <p>*Location is approximate based on the IP address it originated from.</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+From - Sun Jul 16 10:53:39 2023
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: dimitrischr0@gmail.com
+Received: by 2002:a2e:a169:0:b0:2b7:3473:3018 with SMTP id u9csp1168911ljl;
+        Sun, 16 Jul 2023 00:53:36 -0700 (PDT)
+X-Received: by 2002:a05:6830:2016:b0:6b9:68fb:5a28 with SMTP id e22-20020a056830201600b006b968fb5a28mr8759299otp.27.1689494015717;
+        Sun, 16 Jul 2023 00:53:35 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1689494015; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Td3cB7MOvC19zUPXqao7n+Xs6jW7WiZNzMLJAWgKHtXUSpJagQPXs3h5DBCni91Gpk
+         ADlpxJqbeBzxabpb5VMkcnYQ/yyIdLe53wcJ0O6jTKuSaullGNvgwrOpjBCCtKADsgdK
+         yVqVRr1hprO+Re44V1bKdv3u0CmtzP9WGlKUcWQiyTmCZAjzPnc8jLty4skQER3iCtiy
+         36JaFHVaCOwITEwSvqJmL/NqOPnMCs2UHpOpxtDb6ooEm8L3c4I+nNCW5kKAovgMmkR8
+         GV4dasj+xDOPD/Z64Pf/YmNlzdCJKP9Z6qjXW8G9rlJgJqFdgn5c2hTMPXMqAh1tq3QD
+         IL8Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:from:subject:message-id:feedback-id:date:mime-version
+         :dkim-signature;
+        bh=RQoPKMj+BAbxEvZOjc8kuLTfMijoaHAvcoDFFFyaqi0=;
+        fh=bYuz0YqEno7p6JZi15hStFB3tdBjXK0nIVr6doBeLTc=;
+        b=RCLEw4kvfM28ryAB0VfCE30PGBQQ9ykx8iGvcWIcgHQ80YQv6BqnHz+nuykqtKvB1P
+         ybJHSEounApCnix9PDmIClUkajL5HeXWhYyABNoe4GaG78KztTCJqqLwfbX28dhta2Om
+         bL1bcfU4XEugDnO/Qu88/S3UmGMdJvAQ0twDHp1/31WRQcelMIahsq2Qvw/JCqf8hntk
+         L83/Rfm7pG07oxuthXk1ZEvmNK5aPg0oJz5uD6TqZB9Fs36hlHEW+xg8YoiWiPYxKunt
+         R3AvGZDuY6TdREzdaknQSDi7Gbhey7hOkCBNoxv5PqfyLAZOz/VBed3waN2t/7eBINgn
+         4D9A==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20221208 header.b=ZX6yUdTV;
+       spf=pass (google.com: domain of 3_6gzzagtdd4st-wjuq3fhhtzsyx.lttlqj.htrinrnywnxhmw5lrfnq.htr@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3_6GzZAgTDD4st-wjuq3fhhtzsyx.lttlqj.htrinrnywnxhmw5lrfnq.htr@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+Return-Path: <3_6GzZAgTDD4st-wjuq3fhhtzsyx.lttlqj.htrinrnywnxhmw5lrfnq.htr@gaia.bounces.google.com>
+Received: from mail-sor-f73.google.com (mail-sor-f73.google.com. [209.85.220.73])
+        by mx.google.com with SMTPS id m19-20020a9d6093000000b006b752e927d7sor8924801otj.15.2023.07.16.00.53.35
+        for <dimitrischr0@gmail.com>
+        (Google Transport Security);
+        Sun, 16 Jul 2023 00:53:35 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 3_6gzzagtdd4st-wjuq3fhhtzsyx.lttlqj.htrinrnywnxhmw5lrfnq.htr@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) client-ip=209.85.220.73;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@accounts.google.com header.s=20221208 header.b=ZX6yUdTV;
+       spf=pass (google.com: domain of 3_6gzzagtdd4st-wjuq3fhhtzsyx.lttlqj.htrinrnywnxhmw5lrfnq.htr@gaia.bounces.google.com designates 209.85.220.73 as permitted sender) smtp.mailfrom=3_6GzZAgTDD4st-wjuq3fhhtzsyx.lttlqj.htrinrnywnxhmw5lrfnq.htr@gaia.bounces.google.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=accounts.google.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=accounts.google.com; s=20221208; t=1689494015; x=1692086015;
+        h=to:from:subject:message-id:feedback-id:date:mime-version:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=RQoPKMj+BAbxEvZOjc8kuLTfMijoaHAvcoDFFFyaqi0=;
+        b=ZX6yUdTVtuH03c6CdskeJe1jMsRJ4djxTaB0buq7Q89V+bYBSs1C8desPdt2xfQ1b3
+         UujNQcuNKxeH+DeZ2Vu15qJR47gWVb9O7LO50V3i8UukZo98E5TylNXMU/d+6CFN8s6j
+         yhe0yBKw2/2cA7oMlruLbDW6Z/rI1BHfPacbFl3XP+GoY90Igqo0XbJ2iie98QbjCzxv
+         d5UWa3eCrPR85+Gs38mHdnadMoRPQzFWAt+MWP5A6S7uPjRM5iQ+5fYVoMTfv7r8bfEz
+         XpI+Pk89F74UPyl/d0l1SaWXJJm5I7upiTuSDQVCC19y/WbX5FDyfthHWqQ+qm8Cz6J+
+         mlng==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1689494015; x=1692086015;
+        h=to:from:subject:message-id:feedback-id:date:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=RQoPKMj+BAbxEvZOjc8kuLTfMijoaHAvcoDFFFyaqi0=;
+        b=ELgStOXwqLY4MU7bK+ZSFQY9eXNJi2ARqqOqfrso+oSinUZT4eQowOzD8yVzjk2JHH
+         5UvxW3rsF7iOcoJMxsK26IjogRnbf8Wplft7+K4foumzCemOsbOAtnC9pCXSEz9jbWmi
+         Emzes9BX2IlhYrPKP9CwvfPV6gLxYG9ueioZuxYmBzgoYNlQq9re0UkG0aW24pgkkbVN
+         iQvqvxMIVvxcY/t5dXiP1eK+ph13KUS0wWN3VcaEIRyEg6d5XL0Lrq7QQEI/ofozaFqv
+         W1HgIdPgX49mSmfgMil6kvVX+ykvgGIZFjGGTi6+x3xg63QuOIA1gFgYgfy6JVQJ+Zeq
+         Oxcg==
+X-Gm-Message-State: ABy/qLZAVtf2coCzx+Qo/ISH7MzBmTZ9gmLRNsyFJ45Aum1wFIjDmEpy
+	D6l7KKUkq9dnU0qtKME6gN8Tbx8s8eHromMb5GsYD6am
+X-Google-Smtp-Source: APBJJlFJRPlpHkZvyyShV+P4iuXC3xzvqRlq0mhoYUdhHOJEC74dChXP4J75CgGY8OBqDS+mPY5gwMzuScedsIJp6JlkqQ==
+MIME-Version: 1.0
+X-Received: by 2002:a05:6830:18fc:b0:6b8:959f:8261 with SMTP id
+ d28-20020a05683018fc00b006b8959f8261mr7167555otf.0.1689494015247; Sun, 16 Jul
+ 2023 00:53:35 -0700 (PDT)
+Date: Sun, 16 Jul 2023 07:53:34 GMT
+X-Account-Notification-Type: 127
+Feedback-ID: 127:account-notifier
+X-Notifications: fd8dcc81aac40000
+X-Notifications-Bounce-Info: AayBb5OEtY8-EH0mLYU1NyS3zDHz0H4WAg1c_togPohg7rh1tYxfTMLjckZYdKL27WqQaaEiQAPmfVDVJLVFQeEzm17dJt7yhD-Bg2zlgbpJ-rD6SuU8Z26eD1sFmcP8IXO1SapJs-QADdo6ta5OxyP2KwaEDKxwJK0ElGUVh9BExwwQiyN8Z9d0cGtrK67HePIZj5Lm5lQNjAwNjA0MDQxNTM1NTk2OTMzMg
+Message-ID: <iYLxtH486NhiKu-60Dzq5w@notifications.google.com>
+Subject: Security alert
+From: Google <no-reply@accounts.google.com>
+To: dimitrischr0@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000a1073f060095fa39"
+
+--000000000000a1073f060095fa39
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
+
+W2ltYWdlOiBHb29nbGVdDQpNb3ppbGxhIFRodW5kZXJiaXJkIEVtYWlsIHdhcyBncmFudGVkIGFj
+Y2VzcyB0byB5b3VyIEdvb2dsZSBBY2NvdW50DQoNCg0KZGltaXRyaXNjaHIwQGdtYWlsLmNvbQ0K
+DQpJZiB5b3UgZGlkIG5vdCBncmFudCBhY2Nlc3MsIHlvdSBzaG91bGQgY2hlY2sgdGhpcyBhY3Rp
+dml0eSBhbmQgc2VjdXJlIHlvdXINCmFjY291bnQuDQpDaGVjayBhY3Rpdml0eQ0KPGh0dHBzOi8v
+YWNjb3VudHMuZ29vZ2xlLmNvbS9BY2NvdW50Q2hvb3Nlcj9FbWFpbD1kaW1pdHJpc2NocjBAZ21h
+aWwuY29tJmNvbnRpbnVlPWh0dHBzOi8vbXlhY2NvdW50Lmdvb2dsZS5jb20vYWxlcnQvbnQvMTY4
+OTQ5NDAxNDAwMD9yZm4lM0QxMjclMjZyZm5jJTNEMSUyNmVpZCUzRC02NDk3NjU5NDY4MjI3NDM4
+NDQ4JTI2ZXQlM0QwPg0KWW91IGNhbiBhbHNvIHNlZSBzZWN1cml0eSBhY3Rpdml0eSBhdA0KaHR0
+cHM6Ly9teWFjY291bnQuZ29vZ2xlLmNvbS9ub3RpZmljYXRpb25zDQpZb3UgcmVjZWl2ZWQgdGhp
+cyBlbWFpbCB0byBsZXQgeW91IGtub3cgYWJvdXQgaW1wb3J0YW50IGNoYW5nZXMgdG8geW91cg0K
+R29vZ2xlIEFjY291bnQgYW5kIHNlcnZpY2VzLg0KwqkgMjAyMyBHb29nbGUgSXJlbGFuZCBMdGQu
+LCBHb3Jkb24gSG91c2UsIEJhcnJvdyBTdHJlZXQsIER1YmxpbiA0LCBJcmVsYW5kDQo=
+--000000000000a1073f060095fa39
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html lang=3D"en"><head><meta name=3D"format-detection" cont=
+ent=3D"email=3Dno"/><meta name=3D"format-detection" content=3D"date=3Dno"/>=
+<style nonce=3D"2kVUXj_UTDIgJ5DpQ7QuzA">.awl a {color: #FFFFFF; text-decora=
+tion: none;} .abml a {color: #000000; font-family: Roboto-Medium,Helvetica,=
+Arial,sans-serif; font-weight: bold; text-decoration: none;} .adgl a {color=
+: rgba(0, 0, 0, 0.87); text-decoration: none;} .afal a {color: #b0b0b0; tex=
+t-decoration: none;} @media screen and (min-width: 600px) {.v2sp {padding: =
+6px 30px 0px;} .v2rsp {padding: 0px 10px;}} @media screen and (min-width: 6=
+00px) {.mdv2rw {padding: 40px 40px;}} </style><link href=3D"//fonts.googlea=
+pis.com/css?family=3DGoogle+Sans_old" rel=3D"stylesheet" type=3D"text/css" =
+nonce=3D"2kVUXj_UTDIgJ5DpQ7QuzA"/></head><body style=3D"margin: 0; padding:=
+ 0;" bgcolor=3D"#FFFFFF"><table width=3D"100%" height=3D"100%" style=3D"min=
+-width: 348px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" lang=3D"en=
+"><tr height=3D"32" style=3D"height: 32px;"><td></td></tr><tr align=3D"cent=
+er"><td><div itemscope itemtype=3D"//schema.org/EmailMessage"><div itemprop=
+=3D"action" itemscope itemtype=3D"//schema.org/ViewAction"><link itemprop=
+=3D"url" href=3D"https://accounts.google.com/AccountChooser?Email=3Ddimitri=
+schr0@gmail.com&amp;continue=3Dhttps://myaccount.google.com/alert/nt/168949=
+4014000?rfn%3D127%26rfnc%3D1%26eid%3D-6497659468227438448%26et%3D0"/><meta =
+itemprop=3D"name" content=3D"Review Activity"/></div></div><table border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"padding-bottom: 20px; max-=
+width: 516px; min-width: 220px;"><tr><td width=3D"8" style=3D"width: 8px;">=
+</td><td><div style=3D"border-style: solid; border-width: thin; border-colo=
+r:#dadce0; border-radius: 8px; padding: 40px 20px;" align=3D"center" class=
+=3D"mdv2rw"><img src=3D"https://www.gstatic.com/images/branding/googlelogo/=
+2x/googlelogo_color_74x24dp.png" width=3D"74" height=3D"24" aria-hidden=3D"=
+true" style=3D"margin-bottom: 16px;" alt=3D"Google"><div style=3D"font-fami=
+ly: &#39;Google Sans&#39;,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;bor=
+der-bottom: thin solid #dadce0; color: rgba(0,0,0,0.87); line-height: 32px;=
+ padding-bottom: 24px;text-align: center; word-break: break-word;"><div sty=
+le=3D"font-size: 24px;"><a>Mozilla Thunderbird Email</a> was granted access=
+ to your Google&nbsp;Account </div><table align=3D"center" style=3D"margin-=
+top:8px;"><tr style=3D"line-height: normal;"><td align=3D"right" style=3D"p=
+adding-right:8px;"><img width=3D"20" height=3D"20" style=3D"width: 20px; he=
+ight: 20px; vertical-align: sub; border-radius: 50%;;" src=3D"https://lh3.g=
+oogleusercontent.com/a/AAcHTtc8mStX7kYeqXkjHWImcr9c1CC4GVN9A1qBQFM1Reww2NE=
+=3Ds96" alt=3D""></td><td><a style=3D"font-family: &#39;Google Sans&#39;,Ro=
+boto,RobotoDraft,Helvetica,Arial,sans-serif;color: rgba(0,0,0,0.87); font-s=
+ize: 14px; line-height: 20px;">dimitrischr0@gmail.com</a></td></tr></table>=
+ </div><div style=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-serif=
+; font-size: 14px; color: rgba(0,0,0,0.87); line-height: 20px;padding-top: =
+20px; text-align: left;"><br>If you did not grant access, you should check =
+this activity and secure your account.<div style=3D"padding-top: 32px; text=
+-align: center;"><a href=3D"https://accounts.google.com/AccountChooser?Emai=
+l=3Ddimitrischr0@gmail.com&amp;continue=3Dhttps://myaccount.google.com/aler=
+t/nt/1689494014000?rfn%3D127%26rfnc%3D1%26eid%3D-6497659468227438448%26et%3=
+D0" target=3D"_blank" link-id=3D"main-button-link" style=3D"font-family: &#=
+39;Google Sans&#39;,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; line-hei=
+ght: 16px; color: #ffffff; font-weight: 400; text-decoration: none;font-siz=
+e: 14px;display:inline-block;padding: 10px 24px;background-color: #4184F3; =
+border-radius: 5px; min-width: 90px;">Check activity</a></div></div><div st=
+yle=3D"padding-top: 20px; font-size: 12px; line-height: 16px; color: #5f636=
+8; letter-spacing: 0.3px; text-align: center">You can also see security act=
+ivity at<br><a style=3D"color: rgba(0, 0, 0, 0.87);text-decoration: inherit=
+;">https://myaccount.google.com/notifications</a></div></div><div style=3D"=
+text-align: left;"><div style=3D"font-family: Roboto-Regular,Helvetica,Aria=
+l,sans-serif;color: rgba(0,0,0,0.54); font-size: 11px; line-height: 18px; p=
+adding-top: 12px; text-align: center;"><div>You received this email to let =
+you know about important changes to your Google Account and services.</div>=
+<div style=3D"direction: ltr;">&copy; 2023 Google Ireland Ltd., <a class=3D=
+"afal" style=3D"font-family: Roboto-Regular,Helvetica,Arial,sans-serif;colo=
+r: rgba(0,0,0,0.54); font-size: 11px; line-height: 18px; padding-top: 12px;=
+ text-align: center;">Gordon House, Barrow Street, Dublin 4, Ireland</a></d=
+iv></div></div></td><td width=3D"8" style=3D"width: 8px;"></td></tr></table=
+></td></tr><tr height=3D"32" style=3D"height: 32px;"><td></td></tr></table>=
+</body></html>
+--000000000000a1073f060095fa39--
+From - Sun Jul 16 10:52:01 2023
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00000000
+Delivered-To: dimitrischr0@gmail.com
+Received: by 2002:a2e:a169:0:b0:2b7:3473:3018 with SMTP id u9csp1168587ljl;
+        Sun, 16 Jul 2023 00:51:58 -0700 (PDT)
+X-Google-Smtp-Source: APBJJlGKjiC48uDfIdwQkIO56UZRVDHCVJcKcN0AYyrNG0tjDf4n/i3VlCvbL3cCaOtn8fwLraZC
+X-Received: by 2002:a7b:cd95:0:b0:3f7:3699:c294 with SMTP id y21-20020a7bcd95000000b003f73699c294mr7165648wmj.29.1689493918403;
+        Sun, 16 Jul 2023 00:51:58 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1689493918; cv=none;
+        d=google.com; s=arc-20160816;
+        b=s5gG0fiY48Mhm8juJhUEBqm2nWWZmPL8IFJMnA8z5uG6I0Hlr79OxIw20/F3VvqhYp
+         nB5TvG6rlUbZKb/FAs0hfKyQ+9gnNJjyMYtV/QA5HRy3yfTiVwZ/mwa1CzyA2PaUYpG1
+         chPyopYs2BiXDdr9YM0WU3WTMh/2bwbJq1QpTtlDuQ/bITdOLY0lkSn8Mh3iFLvcmtwj
+         4EogZqW/79Gln415TEjsHnqOagP1VD3suMJmwZsAnUu/XmlG4V0oIt/qvd/rGQfPoDS4
+         OIdwdW6lrNkObKX5U/YETguVu1JHGYh9hCTwGdVsZQN38GWR/fSh6wc+aHbB8jjIbB0w
+         Y3nA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:subject:message-id:to
+         :reply-to:from:date:dkim-signature;
+        bh=4UQuaEbHuZH8Z7MxhjqEXtuheSB9W1HgUByfhh0egFI=;
+        fh=fC82dvy7H341WUNYEvfuaG02/9ENpvh2HIvyPuagf+o=;
+        b=H5Xb0kYSBJ7yfOScWv7jAjxn+Qc6cHNLXI0bPphR3xqIURWl4yRW/bmDhhijIWn5cn
+         H2UCVtmYsBNv3FKKWX+aSOUU8Mbw2lI6ofNjB9IU6kaE5CNIqfmK10g5l5mkduq34ABW
+         SDDinekDfhu1ET8G8M3ku1CDUbGlOR9X9BJFy5KeDPiA1o+NMNWXqsjEVzpGDVXO4mhP
+         TXFEElzA+G2XY7Mev6Dr+BwXoHIflgxDwcOCxrMXwiHXW/2jr1ffhyt14I4s+04J8+cv
+         C58hpKgmquBtXo5HVISCX+35eSUK20VmWc9vWKmJ5qBvM+ZG7y/TNp0vn3bw3ftZMA6q
+         rDHA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@cc.yahoo-inc.com header.s=fz2048 header.b="ooMnD5r/";
+       spf=pass (google.com: domain of accounts@returns.bulk.yahoo.com designates 77.238.177.193 as permitted sender) smtp.mailfrom=accounts@returns.bulk.yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=cc.yahoo-inc.com
+Return-Path: <accounts@returns.bulk.yahoo.com>
+Received: from sonic320-10.consmr.mail.ir2.yahoo.com (sonic320-10.consmr.mail.ir2.yahoo.com. [77.238.177.193])
+        by mx.google.com with ESMTPS id a14-20020a05600c224e00b003fbd634e47esi2669250wmm.92.2023.07.16.00.51.58
+        for <dimitrischr0@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Sun, 16 Jul 2023 00:51:58 -0700 (PDT)
+Received-SPF: pass (google.com: domain of accounts@returns.bulk.yahoo.com designates 77.238.177.193 as permitted sender) client-ip=77.238.177.193;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@cc.yahoo-inc.com header.s=fz2048 header.b="ooMnD5r/";
+       spf=pass (google.com: domain of accounts@returns.bulk.yahoo.com designates 77.238.177.193 as permitted sender) smtp.mailfrom=accounts@returns.bulk.yahoo.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=cc.yahoo-inc.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=cc.yahoo-inc.com; s=fz2048; t=1689493918; bh=4UQuaEbHuZH8Z7MxhjqEXtuheSB9W1HgUByfhh0egFI=; h=Date:From:Reply-To:To:Subject:From:Subject:Reply-To; b=ooMnD5r/wV9vKoU3tliLBRMNmAOCvwMyfj61HhIhuX7DHgrO8ybWLCaEhOg7Ri0qEYgG/nUD19HueJdVnDiBKS8DPEMGsdu6fZTQaxvdcbPJpQnauX/PVOuvq2ZQQFElfwYIKHxBQWeASFaz8uOOYiuvnojB4E+Nc8HenTL4j9P73U3zbdemL++E4LRwrjAgjsc51N3S/RSLrbzrVZrKipCmMJth6oHdfZP0YgY5sg5JYNqGhG8b6gTihUM+VOxsJbvPwSzUDQEk3r9MNw6MCONdhgkb6MFR6vLM/m2z0+FXNlICOUQ84Owlks1q6aUA4UFTB0VNOuoafE232h99rw==
+X-SONIC-DKIM-SIGN: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s2048; t=1689493918; bh=xrK3UsfPZzQyla5qwzkM6WjycGuEXSoZgpuPLGCmzaC=; h=X-Sonic-MF:Date:From:To:Subject:From:Subject; b=OXGuuPUDivEEkuMm456kyWHYZfrRBVJG0+INznXIn+BoEDmqy2Di/v64aUch+gNZeci0Y48lzhnveuL/B6PivPM1Tnzkd0gD1jfjPgf6NilHTLrOukLW9S6GqkuAMMnoela5S9Wr+cbSPi6PErHVdBVfj8b/P4E7kqKvc5kaosAD6k5eiL+OYDoFImNCszJx8r4DGsvXv2XxRBxsumst87+q3jeSvXYNAr1+xQukwtd5woy60gez1wB6N9xus/2YLUN9mGVsS6x1ND3/Z9Kkr5Iesjs96aqw8t0MbEmJOiA11bcjoi4XNnhLJu+V3EIRS4IfZwDZ1hzLBLAKO3GPWQ==
+X-Sonic-MF: accounts@returns.bulk.yahoo.com
+X-Sonic-ID: 12e51903-7083-4d4a-828b-3fbd713fa49a
+Received: from sonic.gate.mail.ne1.yahoo.com by sonic320.consmr.mail.ir2.yahoo.com with HTTP; Sun, 16 Jul 2023 07:51:58 +0000
+Date: Sun, 16 Jul 2023 07:51:54 +0000 (UTC)
+From: Yahoo <no-reply@cc.yahoo-inc.com>
+Reply-To: Yahoo <no-reply@cc.yahoo-inc.com>
+To: dimitrischr0@gmail.com
+Message-ID: <2142641738.1744.1689493914779@api113.oauth.member.ir2.yahoo.com>
+Subject: New sign in on thunderbird
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        html {
+        -webkit-text-size-adjust:none;
+        }
+        body {
+        width:100%;
+        margin:0 auto;
+        padding:0;
+        }
+        p {
+        width:280px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        }
+        a {
+        text-decoration: none;
+        color: #3492ff;
+        }
+        li {
+        width: 280px;
+        }
+    </style>
+    
+</head>
+<body style="font-family:Helvetica Neue;">
+<div>
+    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#f4f3f8" style="table-layout:fixed; padding: 5px 10px;" dir="ltr">
+        <tbody>
+        <tr>
+            <td align="center" valign="top" style="min-width:420px;">
+                <!-- Email header table -->
+                <table cellspacing="0" cellpadding="0" width="420" height="50" bgcolor="#ffffff">
+                    <tr>
+                        <td align="left" style="padding: 22px;">
+                            <img src="https://s.yimg.com/rz/stage/p/yahoo_frontpage_en-US_s_f_p_bestfit_frontpage_2x.png" style="display:block; border:0; margin-top:10px;" width="100" alt="Yahoo"/>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Email body table -->
+                <table cellspacing="0" cellpadding="0" width="420" bgcolor="#ffffff">
+                    <!-- Salutation row -->
+                    <tr>
+                        <td style="padding-left: 22px;">
+                            <div style="font-size: 12px;">
+                                <p style="color: #000000; margin:0px;"><b>Hi Dimitris,</b></p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Main content row -->
+                    <tr>
+                        <td style="padding-left: 22px;">
+                            <!-- Additional info table -->
+                            <div style="font-family: HelveticaNeue;
+                                        font-size: 12px;
+                                        color: #26282A;
+                                        line-height: 16px;">
+                                <p style="margin-top: 30px;">Your Yahoo account dimitrisucy was just used to sign in on thunderbird.</p>
+                            </div>
+                            <div style="font-family: HelveticaNeue;
+                                        font-size: 12px;
+                                        color: #26282A;
+                                        line-height: 16px;">
+                                <p>If you did this, you&rsquo;re all set.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Additional info row 1-->
+                    <tr>
+                        <td style="padding-left: 22px;">
+                            <!-- Additional info table -->
+                            <div style="font-family: HelveticaNeue;
+                                        font-size: 12px;
+                                        color: #26282A;
+                                        line-height: 16px;">
+                                <p style="margin-top: 15px; margin-bottom: 5px;">If not, please use <a href='https://login.yahoo.com/account/activity#authorized-apps'>this link</a> to stop sharing, and create a new password.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Additional info row 2-->
+                    <tr>
+                        <td style="padding-left: 22px;">
+                            <!-- Additional info table -->
+                            <div style="font-family: HelveticaNeue;
+                                        font-size: 12px;
+                                        color: #26282A;
+                                        line-height: 16px;">
+                                <p style="margin-top: 15px; margin-bottom: 5px;">Have a great day!</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- From row -->
+                    <tr>
+                        <td style="padding-left: 22px;">
+                            <div style="font-family: HelveticaNeue;
+                                   font-size: 12px;
+                                   color: #000000;
+                                   line-height: 16px;">
+                                <p style="margin-top: 30px; margin-bottom: 3px;">
+                                    Thanks,
+                                </p>
+                                <p style="margin: 0px;">
+                                    <b>Yahoo</b>
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Footer -->
+                <table cellspacing="0" cellpadding="0" width="420" bgcolor="#ffffff" style="font-size:10px; line-height:20px; color:#000000; text-align:left;">
+                    <tr>
+                        <td style="padding-left: 22px; color: #878C91; padding-top: 30px;">
+                            <div style="margin-top: 10px; margin-bottom: 20px; width: 250px;">
+                                <p>Replies sent to this email cannot be answered.</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+Delivered-To: dimitrischr0@gmail.com
+Received: by 2002:a2e:868d:0:b0:2cf:2b76:607d with SMTP id l13csp668829lji;
+        Sun, 25 Feb 2024 09:34:27 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IFNapo/X5FMAyOrSLJhZ3I4MyZj4gA27zxvHbfrIpqukH1RAX4wiUxwa/JEtLQxQ8Yfnjxp
+X-Received: by 2002:aa7:df93:0:b0:565:e294:5119 with SMTP id b19-20020aa7df93000000b00565e2945119mr797708edy.18.1708882467621;
+        Sun, 25 Feb 2024 09:34:27 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1708882467; cv=none;
+        d=google.com; s=arc-20160816;
+        b=lZenTPOZC9kkzDNruorXpIfpZuKKQvzsyIwB81vz8RWykvZtP3tuY18fu8XwDW/JUC
+         swSNAXYSsvKCr4/WVUa40M6wUIBvyA67QuAaQHd5zoF0bP58oOAeqZGkKmz/wcxlRT/r
+         N9/LC9LVNWKKwZ0JL/lckghYq5FuIU1qbflTUPb9HfzqD0D9uDeYIuXPclZ2+fAc1232
+         IYh1fxJ2oxLT59pvcrmnkGrhg9AutyXtLXfRS9QaBtrOCeidwwAF1uZrOnDsXw++tsxb
+         /7hu2jO9MFhEnfIn91UbCBuLqXcRw/5C4AKY35uK9omwt95dvv8yaDZP5S7uPTY8sqZs
+         VT9Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:mime-version:bimi-selector:list-unsubscribe:errors-to
+         :reply-to:from:subject:to:date:dkim-signature;
+        bh=jDo/uX4FGglApfql4WuCcplx+bT2L6AopJtiVbBogQc=;
+        fh=EDj11HjrUBAkxUuxlUOAICp2GSVzBy1P/nhA3ZdIF4g=;
+        b=gzaJg/0c82z5XV9zTjLX0GYB4QpyQtx6jVkEkRwtE3ye/DdwN/TQYuCB/P5jIMKfVA
+         u5s+eO/r+w8MPjtStNQQyIcJcaDyh2DmABln7GMjDtTeqr0l6/OHLh6jsLJGnfLFaVvl
+         rYzfBFBWKw2wH5w6PpX1yJtBtj6M2CVHOw5mWx1u81udvD/hYiWl6ybROkLKjcC9x8Po
+         /B1/81UzcwQeyAAF4aAvvabW7yjN53/P20gBQ9KMArGhEv3z8LAd7ADHN+ic92+1+G7K
+         Wr9QwI45E01D5Ko4n2ksEjpF5YTIFfbFB65yi146eItzON7nOxOjB2NsYRIEKNdYlEKo
+         /Twg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@facebookmail.com header.s=s1024-2013-q3 header.b=EqY6aYXT;
+       spf=pass (google.com: domain of security@facebookmail.com designates 66.220.155.140 as permitted sender) smtp.mailfrom=security@facebookmail.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=facebookmail.com
+Return-Path: <security@facebookmail.com>
+Received: from 66-220-155-140.mail-mail.facebook.com (66-220-155-140.mail-mail.facebook.com. [66.220.155.140])
+        by mx.google.com with ESMTPS id c19-20020aa7c753000000b00563ce99a18dsi1378270eds.350.2024.02.25.09.34.27
+        for <dimitrischr0@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sun, 25 Feb 2024 09:34:27 -0800 (PST)
+Received-SPF: pass (google.com: domain of security@facebookmail.com designates 66.220.155.140 as permitted sender) client-ip=66.220.155.140;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@facebookmail.com header.s=s1024-2013-q3 header.b=EqY6aYXT;
+       spf=pass (google.com: domain of security@facebookmail.com designates 66.220.155.140 as permitted sender) smtp.mailfrom=security@facebookmail.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=facebookmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=facebookmail.com;
+	s=s1024-2013-q3; t=1708882464;
+	bh=jDo/uX4FGglApfql4WuCcplx+bT2L6AopJtiVbBogQc=;
+	h=Date:To:Subject:From:MIME-Version:Content-Type;
+	b=EqY6aYXT3Ngcc5vESoJsKL3Tw0YoIOhu+qUgNaCRqoUBs/GGrliva+y9Vb3f05AVr
+	 Tsp5xWmmuAMCaJkapkRs+URYHWEgopGBbx2E/fYfMUpFUibpli39bV8nGNDactAQkh
+	 8Y1USSU1yWyCLMqlgwCaXu7yb2/OLeGWEuz1sVkQ=
+X-Facebook: from 2803:6082:c8c4:3a59:ff70:13dc:200:0 ([MTI3LjAuMC4x]) 
+	by www.facebook.com with HTTPS (ZuckMail);
+Date: Sun, 25 Feb 2024 09:34:23 -0800
+To: Dimitris Chrysostomou <dimitrischr0@gmail.com>
+Subject: Login alert for Firefox on Linux
+X-Priority: 3
+X-Mailer: ZuckMail [version 1.00]
+Return-Path: security@facebookmail.com
+From: "Facebook" <security@facebookmail.com>
+Reply-to: noreply <noreply@facebookmail.com>
+Errors-To: security@facebookmail.com
+X-Facebook-Notify: login_alerts_new_device; mailid=U1U61237ea3afa03G4b7641f4G6123833d0fcd5G2bf
+List-Unsubscribe: <https://www.facebook.com/n/?login_alerts%2Fsettings%2F&aref=1708882457066709&medium=email&mid=61237ea3afa03G4b7641f4G6123833d0fcd5G2bf&bcode=2.1708882463.AbwPT8uydNOVoeTROu0&n_m=dimitrischr0%40gmail.com&rms=v2&irms=true>
+BIMI-Selector: v=BIMI1; s=fb2023q1v3;
+X-FACEBOOK-PRIORITY: 0
+X-Auto-Response-Suppress: All
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_d87d5f9d64ea7ed87e6a73ba01c8efb8"
+Message-ID: <1df23b50-d404-11ee-8253-955733f614f9@facebookmail.com>
+
+
+--b1_d87d5f9d64ea7ed87e6a73ba01c8efb8
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Review login
+https://www.facebook.com/n/?login_alerts%2Fstart%2F&fbid=3D102318852694557=
+36&s=3De&aref=3D1708882457066709&medium=3Demail&mid=3D61237ea3afa03G4b7641=
+f4G6123833d0fcd5G2bf&bcode=3D2.1708882463.AbwPT8uydNOVoeTROu0&n_m=3Ddimitr=
+ischr0%40gmail.com&rms=3Dv2&irms=3Dtrue
+
+
+Manage alerts
+https://www.facebook.com/n/?login_alerts%2Fsettings%2F&aref=3D170888245706=
+6709&medium=3Demail&mid=3D61237ea3afa03G4b7641f4G6123833d0fcd5G2bf&bcode=
+=3D2.1708882463.AbwPT8uydNOVoeTROu0&n_m=3Ddimitrischr0%40gmail.com&rms=3Dv=
+2&irms=3Dtrue
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Hi Dimitris,
+
+Hi Dimitris,
+
+We noticed an unusual login from a device or location you don't usually =
+use. Was this you?
+
+New login
+
+February 25, 2024 at 7:34 PM
+
+Near Strovolos, Cyprus
+
+Firefox on Linux
+
+Thanks,
+The Facebook team
+
+
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+This message was sent to dimitrischr0@gmail.com. If you don't want to =
+receive these emails from Meta in the future, please follow the link below =
+to unsubscribe.
+https://www.facebook.com/n/?login_alerts%2Fsettings%2F&aref=3D170888245706=
+6709&medium=3Demail&mid=3D61237ea3afa03G4b7641f4G6123833d0fcd5G2bf&bcode=
+=3D2.1708882463.AbwPT8uydNOVoeTROu0&n_m=3Ddimitrischr0%40gmail.com&rms=3Dv=
+2&irms=3Dtrue
+Meta Platforms Ireland Ltd., Attention: Community Operations, 4 Grand =
+Canal Square, Dublin 2, Ireland
+To help keep your account secure, please don't forward this email. Follow =
+the link below to learn more.
+https://www.facebook.com/email_forward_notice/?mid=3D61237ea3afa03G4b7641f=
+4G6123833d0fcd5G2bf
+
+
+--b1_d87d5f9d64ea7ed87e6a73ba01c8efb8
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional =
+//EN"><html><head><title>Facebook</title><meta http-equiv=3D"Content-Type" =
+content=3D"text/html; charset=3Dutf-8" /><style nonce=3D"lZ4HBsSN">@media =
+all and (max-width: 480px){*[class].ib_t{min-width:100% =
+!important}*[class].ib_row{display:block =
+!important}*[class].ib_ext{display:block !important;padding:10px 0 5px =
+0;vertical-align:top !important;width:100% =
+!important}*[class].ib_img,*[class].ib_mid{vertical-align:top =
+!important}*[class].mb_blk{display:block =
+!important;padding-bottom:10px;width:100% =
+!important}*[class].mb_hide{display:none =
+!important}*[class].mb_inl{display:inline =
+!important}*[class].d_mb_flex{display:block =
+!important}}.d_mb_show{display:none}.d_mb_flex{display:flex}@media only =
+screen and (max-device-width: 480px){.d_mb_hide{display:none =
+!important}.d_mb_show{display:block !important}.d_mb_flex{display:block =
+!important}}.mb_text h1,.mb_text h2,.mb_text h3,.mb_text h4,.mb_text =
+h5,.mb_text h6{line-height:normal}.mb_work_text =
+h1{font-size:18px;line-height:normal;margin-top:4px}.mb_work_text =
+h2,.mb_work_text =
+h3{font-size:16px;line-height:normal;margin-top:4px}.mb_work_text =
+h4,.mb_work_text h5,.mb_work_text =
+h6{font-size:14px;line-height:normal}.mb_work_text =
+a{color:#1270e9}.mb_work_text p{margin-top:4px}</style></head><body =
+style=3D"margin:0;padding:0;" dir=3D"ltr" bgcolor=3D"#ffffff"><table =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" =
+id=3D"email_table" style=3D"border-collapse:collapse;"><tr><td =
+id=3D"email_content" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;background:#ffffff;"><table =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr style=3D""><td height=3D"20" =
+style=3D"line-height:20px;" colspan=3D"3">&nbsp;</td></tr><tr><td =
+height=3D"1" colspan=3D"3" style=3D"line-height:1px;"><span =
+style=3D"color:#FFFFFF;font-size:1px;opacity:0;">=C2=A0 Hi Dimitris, =
+=C2=A0 We noticed an unusual login from a device or location you =
+don&#039;t usually use. Was this you? =C2=A0 New login =C2=A0 =C2=A0 =
+February 25, 2024 at 7:34 PM =C2=A0 =C2=A0 Near Strovolos, Cyprus =C2=A0 =
+=C2=A0 Firefox on Linux =C2=A0</span></td></tr><tr><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr style=3D""><td =
+height=3D"15" style=3D"line-height:15px;" =
+colspan=3D"3">&nbsp;</td></tr><tr><td width=3D"32" align=3D"left" =
+valign=3D"middle" style=3D"height:32;line-height:0px;"><a =
+href=3D"https://www.facebook.com/n/?login_alerts%2Fstart%2F&amp;fbid=3D102=
+31885269455736&amp;s=3De&amp;aref=3D1708882457066709&amp;medium=3Demail&am=
+p;mid=3D61237ea3afa03G4b7641f4G6123833d0fcd5G2bf&amp;bcode=3D2.1708882463.=
+AbwPT8uydNOVoeTROu0&amp;n_m=3Ddimitrischr0%40gmail.com" =
+style=3D"color:#1b74e4;text-decoration:none;"><img width=3D"32" =
+src=3D"https://static.xx.fbcdn.net/rsrc.php/v3/yS/r/ZirYDPWh0YD.png" =
+height=3D"32" style=3D"border:0;" /></a></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+width=3D"100%" style=3D""><a href=3D"https://www.facebook.com/n/?login_ale=
+rts%2Fstart%2F&amp;fbid=3D10231885269455736&amp;s=3De&amp;aref=3D170888245=
+7066709&amp;medium=3Demail&amp;mid=3D61237ea3afa03G4b7641f4G6123833d0fcd5G=
+2bf&amp;bcode=3D2.1708882463.AbwPT8uydNOVoeTROu0&amp;n_m=3Ddimitrischr0%40=
+gmail.com" =
+style=3D"color:#1877f2;text-decoration:none;font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:19p=
+x;line-height:32px;">Login alert</a></td></tr><tr =
+style=3D"border-bottom:solid 1px #e5e5e5;"><td height=3D"15" =
+style=3D"line-height:15px;" colspan=3D"3">&nbsp;</td></tr></table></td><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr style=3D""><td =
+height=3D"28" style=3D"line-height:28px;">&nbsp;</td></tr><tr><td =
+style=3D""><span class=3D"mb_text" style=3D"font-family:Helvetica =
+Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:16p=
+x;line-height:21px;font-weight:bold;color:#141823;">Hi =
+Dimitris,</span></td></tr><tr style=3D""><td height=3D"28" =
+style=3D"line-height:28px;">&nbsp;</td></tr><tr><td style=3D""><span =
+class=3D"mb_text" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;col=
+or:#141823;">We noticed an unusual login from a device or location you =
+don&#039;t usually use. Was this you?</span></td></tr><tr style=3D""><td =
+height=3D"28" style=3D"line-height:28px;">&nbsp;</td></tr><tr><td =
+style=3D""><span style=3D"font-size:10px;font-weight:bold;color:#777;">New =
+login</span></td></tr><tr style=3D""><td height=3D"28" =
+style=3D"line-height:28px;">&nbsp;</td></tr><tr><td style=3D""><tr =
+style=3D"border-top:solid 1px #e5e5e5;"><td height=3D"0" =
+style=3D"line-height:0px;">&nbsp;</td></tr></td></tr><tr><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"left" class=3D"ib_t" =
+style=3D"border-collapse:collapse;min-width:420px;"><tr =
+class=3D"ib_row"><td valign=3D"top" =
+style=3D"padding-right:10px;font-size:0px;" class=3D"ib_img"><img =
+width=3D"16px" =
+src=3D"https://static.xx.fbcdn.net/rsrc.php/v3/y_/r/fxDxryThlPo.png" =
+height=3D"16px" style=3D"border:0;" /></td><td width=3D"100%" =
+valign=3D"top" style=3D"padding-right:10px;" class=3D"ib_mid"><span =
+class=3D"mb_text" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;col=
+or:#141823;">February 25, 2024 at 7:34 =
+PM</span></td></tr></table></td></tr><tr style=3D""><td height=3D"28" =
+style=3D"line-height:28px;">&nbsp;</td></tr><tr><td style=3D""><tr =
+style=3D"border-top:solid 1px #e5e5e5;"><td height=3D"0" =
+style=3D"line-height:0px;">&nbsp;</td></tr></td></tr><tr><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"left" class=3D"ib_t" =
+style=3D"border-collapse:collapse;min-width:420px;"><tr =
+class=3D"ib_row"><td valign=3D"top" =
+style=3D"padding-right:10px;font-size:0px;" class=3D"ib_img"><img =
+width=3D"16px" =
+src=3D"https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/HLjP6-RaBz8.png" =
+height=3D"16px" style=3D"border:0;" /></td><td width=3D"100%" =
+valign=3D"top" style=3D"padding-right:10px;" class=3D"ib_mid"><span =
+class=3D"mb_text" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;col=
+or:#141823;">Near Strovolos, Cyprus</span></td></tr></table></td></tr><tr =
+style=3D""><td height=3D"28" =
+style=3D"line-height:28px;">&nbsp;</td></tr><tr><td style=3D""><tr =
+style=3D"border-top:solid 1px #e5e5e5;"><td height=3D"0" =
+style=3D"line-height:0px;">&nbsp;</td></tr></td></tr><tr><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"left" class=3D"ib_t" =
+style=3D"border-collapse:collapse;min-width:420px;"><tr =
+class=3D"ib_row"><td valign=3D"top" =
+style=3D"padding-right:10px;font-size:0px;" class=3D"ib_img"><img =
+width=3D"16px" =
+src=3D"https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/3WDjs9Fu8WU.png" =
+height=3D"16px" style=3D"border:0;" /></td><td width=3D"100%" =
+valign=3D"top" style=3D"padding-right:10px;" class=3D"ib_mid"><span =
+class=3D"mb_text" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;font-size:16px;line-height:21px;col=
+or:#141823;">Firefox on Linux</span></td></tr></table></td></tr><tr =
+style=3D""><td height=3D"28" =
+style=3D"line-height:28px;">&nbsp;</td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"border-collapse:collapse;"><tr style=3D""><td =
+height=3D"2" style=3D"line-height:2px;" =
+colspan=3D"3">&nbsp;</td></tr><tr><td class=3D"mb_blk" style=3D""><a =
+href=3D"https://www.facebook.com/n/?login_alerts%2Fstart%2F&amp;fbid=3D102=
+31885269455736&amp;s=3De&amp;aref=3D1708882457066709&amp;medium=3Demail&am=
+p;mid=3D61237ea3afa03G4b7641f4G6123833d0fcd5G2bf&amp;bcode=3D2.1708882463.=
+AbwPT8uydNOVoeTROu0&amp;n_m=3Ddimitrischr0%40gmail.com&amp;rms=3Dv2&amp;ir=
+ms=3Dtrue" style=3D"color:#1b74e4;text-decoration:none;"><table =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D"border-collapse:colla=
+pse;border-radius:6px;text-align:center;display:block;background:#1877f2;p=
+adding:8px 16px 10px 16px;"><a href=3D"https://www.facebook.com/n/?login_a=
+lerts%2Fstart%2F&amp;fbid=3D10231885269455736&amp;s=3De&amp;aref=3D1708882=
+457066709&amp;medium=3Demail&amp;mid=3D61237ea3afa03G4b7641f4G6123833d0fcd=
+5G2bf&amp;bcode=3D2.1708882463.AbwPT8uydNOVoeTROu0&amp;n_m=3Ddimitrischr0%=
+40gmail.com&amp;rms=3Dv2&amp;irms=3Dtrue" =
+style=3D"color:#1b74e4;text-decoration:none;display:block;"><center><font =
+size=3D"3"><span style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;white-space:nowrap;font-weight:bold=
+;vertical-align:middle;color:#ffffff;font-size:14px;line-height:14px;">Rev=
+iew&nbsp;login</span></font></center></a></td></tr></table></a></td><td =
+width=3D"10" style=3D"display:block;width:10px;" =
+class=3D"mb_hide">&nbsp;&nbsp;&nbsp;</td><td class=3D"mb_blk" =
+style=3D""><a href=3D"https://www.facebook.com/n/?login_alerts%2Fsettings%=
+2F&amp;aref=3D1708882457066709&amp;medium=3Demail&amp;mid=3D61237ea3afa03G=
+4b7641f4G6123833d0fcd5G2bf&amp;bcode=3D2.1708882463.AbwPT8uydNOVoeTROu0&am=
+p;n_m=3Ddimitrischr0%40gmail.com&amp;rms=3Dv2&amp;irms=3Dtrue" =
+style=3D"color:#1b74e4;text-decoration:none;"><table border=3D"0" =
+width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td style=3D"border-collapse:colla=
+pse;border-radius:6px;text-align:center;display:block;background:#e4e6eb;p=
+adding:8px 16px 10px 16px;"><a href=3D"https://www.facebook.com/n/?login_a=
+lerts%2Fsettings%2F&amp;aref=3D1708882457066709&amp;medium=3Demail&amp;mid=
+=3D61237ea3afa03G4b7641f4G6123833d0fcd5G2bf&amp;bcode=3D2.1708882463.AbwPT=
+8uydNOVoeTROu0&amp;n_m=3Ddimitrischr0%40gmail.com&amp;rms=3Dv2&amp;irms=3D=
+true" =
+style=3D"color:#1b74e4;text-decoration:none;display:block;"><center><font =
+size=3D"3"><span style=3D"font-family:Helvetica Neue,Helvetica,Lucida =
+Grande,tahoma,verdana,arial,sans-serif;white-space:nowrap;font-weight:bold=
+;vertical-align:middle;color:#050505;font-size:17px;font-size:14px;line-he=
+ight:14px;">Manage&nbsp;alerts</span></font></center></a></td></tr></table=
+></a></td><td width=3D"100%" class=3D"mb_hide" style=3D""></td></tr><tr =
+style=3D""><td height=3D"32" style=3D"line-height:32px;" =
+colspan=3D"3">&nbsp;</td></tr></table></td><td width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =
+style=3D""><table border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" align=3D"left" style=3D"border-collapse:collapse;"><tr =
+style=3D"border-top:solid 1px #e5e5e5;"><td height=3D"19" =
+style=3D"line-height:19px;">&nbsp;</td></tr><tr><td =
+style=3D"font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana=
+,arial,sans-serif;font-size:11px;color:#aaaaaa;line-height:16px;"><table =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+style=3D"border-collapse:collapse;"><tr><td align=3D"center" =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding-bottom:6px;">from</td></tr><tr><td align=3D"center" =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding-top:6px;padding-bottom:6px;"><img width=3D"74" alt=3D"Meta" =
+height=3D"22" src=3D"https://facebook.com/images/email/meta_logo.png" =
+style=3D"border:0;" /></td></tr><tr><td align=3D"center" =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding-top:6px;padding-bottom:6px;">=C2=A9 Facebook. Meta =
+Platforms Ireland Ltd., Attention: Community Operations, 4 Grand Canal =
+Square, Dublin 2, Ireland</td></tr><tr><td align=3D"center" =
+style=3D"font-size:11px;font-family:LucidaGrande,tahoma,verdana,arial,sans=
+-serif;padding-top:6px;">This message was sent to <a =
+style=3D"color:#1b74e4;text-decoration:none;" href=3D"mailto:dimitrischr0&=
+#064;gmail.com">dimitrischr0&#064;gmail.com</a>. <br />To help keep your =
+account secure, please don&#039;t forward this email. <a =
+style=3D"color:#1b74e4;text-decoration:none;" =
+href=3D"https://www.facebook.com/help/213481848684090/">Learn =
+more</a></td></tr></table><tr style=3D""><td height=3D"10" =
+style=3D"line-height:10px;">&nbsp;</td></tr></td></tr></table></td><td =
+width=3D"15" =
+style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr =
+style=3D""><td height=3D"20" style=3D"line-height:20px;" =
+colspan=3D"3">&nbsp;</td></tr></table><span style=3D""><img =
+src=3D"https://www.facebook.com/email_open_log_pic.php?mid=3D61237ea3afa03=
+G4b7641f4G6123833d0fcd5G2bf" style=3D"border:0;width:1px;height:1px;" =
+/></span></td></tr></table></body></html>
+
+
+
+--b1_d87d5f9d64ea7ed87e6a73ba01c8efb8--
+

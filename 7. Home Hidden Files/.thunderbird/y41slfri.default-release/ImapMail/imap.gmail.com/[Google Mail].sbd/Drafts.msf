@@ -1,0 +1,124 @@
+// <!-- <mdb:mork:z v="1.4"/> -->
+< <(a=c)> // (f=iso-8859-1)
+  (B8=ns:msg:db:table:kind:pending)(B9=dateReceived)(BA=ProtoThreadFlags)
+  (BB=folderName)(BC=X-GM-MSGID)(BD=X-GM-THRID)(BE=X-GM-LABELS)
+  (BF=dobayes.mailnews@mozilla.org#junk.empty)
+  (C0=dobayes.mailnews@mozilla.org#junk)(C1=storeToken)(C2=gloda-id)
+  (C3=gloda-dirty)(C4=junkscore)(C5=keywords)
+  (C6=ns:msg:db:row:scope:ops:all)(C7=ns:msg:db:table:kind:ops)
+  (C8=pendingRemoval)(80=ns:msg:db:row:scope:msgs:all)(81=subject)
+  (82=sender)(83=message-id)(84=references)(85=recipients)(86=date)
+  (87=size)(88=flags)(89=priority)(8A=label)(8B=numLines)(8C=ccList)
+  (8D=bccList)(8E=msgThreadId)(8F=threadId)(90=threadFlags)
+  (91=threadNewestMsgDate)(92=children)(93=unreadChildren)
+  (94=threadSubject)(95=msgCharSet)(96=ns:msg:db:table:kind:msgs)
+  (97=ns:msg:db:table:kind:thread)(98=ns:msg:db:table:kind:allthreads)
+  (99=ns:msg:db:row:scope:threads:all)(9A=threadParent)(9B=threadRoot)
+  (9C=msgOffset)(9D=offlineMsgSize)
+  (9E=ns:msg:db:row:scope:dbfolderinfo:all)
+  (9F=ns:msg:db:table:kind:dbfolderinfo)(A0=numMsgs)(A1=numNewMsgs)
+  (A2=folderSize)(A3=expungedBytes)(A4=folderDate)(A5=highWaterKey)
+  (A6=mailboxName)(A7=UIDValidity)(A8=totPendingMsgs)
+  (A9=unreadPendingMsgs)(AA=expiredMark)(AB=version)(AC=forceReparse)
+  (AD=fixedBadRefThreading)(AE=onlineName)(AF=columnStates)(B0=viewFlags)
+  (B1=sortType)(B2=sortOrder)(B3=useServerRetention)(B4=highestModSeq)
+  (B5=imapFlags)(B6=highestRecordedUID)
+  (B7=ns:msg:db:row:scope:pending:all)>
+<(91=2461)(8E=6295a217)(81=0)(80=1)>
+[1:m(^9B^91)(^8F^91)(^91^8E)(^90=0)(^92=1)]
+<(98=2463)(96=62150cc6)>[2:m(^9B^98)(^8F^98)(^91^96)(^90=0)(^92=1)]
+<(9E=246c)(9C=62bdddb2)>[3:m(^9B^9E)(^8F^9E)(^91^9C)(^90=0)(^92=1)]
+<(A5=2491)>[4:m(^9B^A5)(^8F^A5)(^91=0)(^90=0)(^92=0)]
+
+<(AA=81)(8B=dimis <dimitrischr0@gmail.com>)(8C=WireGuard)(8D
+    =CAN8Ve9hOuT+z1Tb5M=V+rR0P6TzH6xMYG1d56XY8zEvXYcedVQ@mail.gmail.com)
+  (A9=7c9)(90=ffffffff)(92=1734316945356322292)(93=1734316919019450418)
+  (8A=)(C1=7d0)(AC=36)(BA=dd)(94=TVApp)(95
+    =CAN8Ve9ip0dgT1i0H79fo--MongGhZ=kv-nBQMt5TT5=dJ0V0DA@mail.gmail.com)
+  (97=7b5)(99=1725480770443460138)(C2=2000)(C3=7bc)(AF=42)(BB=de)(9A
+    =Block Reddit Stream)(9B
+    =CAN8Ve9i8kr0KH56k2GNOJjKpxEE_mv0tpzVxWSjpuFNx7QQLTg@mail.gmail.com)
+  (B2=3e7)(A0=1737081725630733539)(A1=1726664028713566166)(C4=f8c)(C5=3980)
+  (C6=3ee)(B4=17)(BC=df)>
+{1:^80 {(k^96:c)(s=9)} 
+  [2461(^88=81)(^82^8B)(^81^8C)(^83^8D)(^B9^8E)(^86^8E)(^89=1)(^87^A9)
+    (^9A^90)(^8E^91)(^BA=0)(^BC^92)(^BD^93)(^BE=)(^9C=0)(^C1=0)(^9D^C1)
+    (^8B=36)(^C2=dd)(^C5=)]
+  [2463(^88=81)(^82^8B)(^81^94)(^83^95)(^B9^96)(^86^96)(^89=1)(^87^97)
+    (^9A^90)(^8E^98)(^BA=0)(^BC^99)(^BD^99)(^BE=)(^9C^C1)(^C1^C2)(^9D^C3)
+    (^8B=42)(^C2=de)(^C5=)]
+  [246C(^88=81)(^82^8B)(^81^9A)(^83^9B)(^B9^9C)(^86^9C)(^89=1)(^87^B2)
+    (^9A^90)(^8E^9E)(^BA=0)(^BC^A0)(^BD^A1)(^BE=)(^9C^C4)(^C1^C5)(^9D^C6)
+    (^8B=17)(^C2=df)(^C5=)]}
+{2461:^80 {(k^97:c)(s=9)1:m } 2461 }
+{246C:^80 {(k^97:c)(s=9)3:m } 246C }
+{2463:^80 {(k^97:c)(s=9)2:m } 2463 }[2491:^80]
+{FFFFFFFD:^99 {(k^98:c)(s=9)} 
+  [2461(^94^8C)]
+  [2463(^94^94)]
+  [246C(^94^9A)]}
+
+<(82=[Google Mail]/Drafts)(83=8082414)(84
+    ={"selectCol":{"visible":false,"ordinal":"1"},"threadCol":{"visible":false\
+,"ordinal":"3"},"flaggedCol":{"visible":false,"ordinal":"5"},"attachmentCol":{\
+"visible":true,"ordinal":"7"},"subjectCol":{"visible":true,"ordinal":"9"},"unr\
+eadButtonColHeader":{"visible":true,"ordinal":"11"},"senderCol":{"visible":fal\
+se,"ordinal":"13"},"recipientCol":{"visible":false,"ordinal":"15"},"correspond\
+entCol":{"visible":true,"ordinal":"17"},"junkStatusCol":{"visible":true,"ordin\
+al":"19"},"receivedCol":{"visible":false,"ordinal":"21"},"dateCol":{"visible":\
+true,"ordinal":"23"},"statusCol":{"visible":false,"ordinal":"25"},"sizeCol":{"\
+visible":true,"ordinal":"27"},"tagsCol":{"visible":false,"ordinal":"29"},"acco\
+untCol":{"visible":false,"ordinal":"31"},"priorityCol":{"visible":false,"ordin\
+al":"33"},"unreadCol":{"visible":false,"ordinal":"35"},"totalCol":{"visible":f\
+alse,"ordinal":"37"},"locationCol":{"visible":false,"ordinal":"39"},"idCol":{"\
+visible":false,"ordinal":"41"},"deleteCol":{"visible":false,"ordinal":"43"}})
+  (85=12)(86=2)(BE=6498922)(88=e000)(89=23bf272c)(C0=3)(B8=fa5)>
+{1:^9E {(k^9F:c)(s=9)} 
+  [1(^AB=1)(^AC=0)(^AD=1)(^AE^82)(^88^83)(^A6^82)(^AF^84)(^B0=1)(^B1=12)
+    (^B2=2)(^B3=1)(^B4^BE)(^B5^88)(^A7^89)(^B6^A5)(^A0=3)(^A5^A5)(^A3^B8)]}
+
+@$${8{@
+[1:^9E(^A3=0)]
+@$$}8}@
+
+@$${9{@
+@$$}9}@
+
+@$${A{@
+@$$}A}@
+
+@$${C{@
+<(C7=6517154)>[1:^9E(^B4^C7)]
+{-1:^C6 {(k^C7:c)(s=9)} }
+@$$}C}@
+
+@$${E{@
+<(C8=6548160)>[1:^9E(^B4^C8)]
+@$$}E}@
+
+@$${10{@
+<(C9=6560827)>[1:^9E(^B4^C9)]
+@$$}10}@
+
+@$${12{@
+[-1:m(^9B^91)(^8F^91)(^91=0)(^90=0)(^92=0)]
+{-1:^80 {(k^96:c)(s=9)} 2463 246C }
+{-2461:^80 {(k^97:c)(s=9)1:m } }[-2461:^80]
+{-FFFFFFFD:^99 {(k^98:c)(s=9)} 2463 246C }
+<(CA=6562143)>[-1:^9E(^AB=1)(^AC=0)(^AD=1)(^AE^82)(^88^83)(^A6^82)
+    (^AF^84)(^B0=1)(^B1=12)(^B2=2)(^B3=1)(^B4^CA)(^B5^88)(^A7^89)(^B6^A5)
+    (^A0=2)(^A5^A5)(^A3^C1)]
+@$$}12}@
+
+@$${13{@
+[-2:m(^9B^98)(^8F^98)(^91=0)(^90=0)(^92=0)]
+[-3:m(^9B^9E)(^8F^9E)(^91=0)(^90=0)(^92=0)]
+{-1:^80 {(k^96:c)(s=9)} }
+{-246C:^80 {(k^97:c)(s=9)3:m } }
+{-2463:^80 {(k^97:c)(s=9)2:m } }[-246C:^80]
+[-2463:^80]
+{-FFFFFFFD:^99 {(k^98:c)(s=9)} }
+<(CC=137a)>[-1:^9E(^AB=1)(^AC=0)(^AD=1)(^AE^82)(^88^83)(^A6^82)(^AF^84)
+    (^B0=1)(^B1=12)(^B2=2)(^B3=1)(^B4^CA)(^B5^88)(^A7^89)(^B6^A5)(^A0=0)
+    (^A5^A5)(^A3^CC)]
+@$$}13}@
