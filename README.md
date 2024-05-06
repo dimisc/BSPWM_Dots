@@ -25,7 +25,7 @@ Dotfiles for BSPWM
         cp -R /BSPWM_Dots/2. Home Config Files/* /home/user/
 
 ## 8)  Copy #3 Fonts
-        sudo mkdir -p /usr/share/fonts
+        sudo mkdir -p /usr/share/fonts (** if needed **)
         sudo cp -R /BSPWM_Dots/3. User Share Fonts/* /usr/share/fonts
         sudo fc-cache -fv
 
