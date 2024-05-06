@@ -43,7 +43,9 @@ Dotfiles for BSPWM
         sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 ## 13) Copy #7 Home Hidden Files
-        cp -R /BSPWM_Dots/7. Home Hidden Files/.* /home/user/
+        cp -R /BSPWM_Dots/7. Home Hidden Files/* /home/user/
+
+        ** Check to see if files have copied with ls -la If not then copy one by one **
 
 ## 14) Copy #8 Root config files
         sudo cp -R /BSPWM_Dots/8. Root/Config/* /home/root
