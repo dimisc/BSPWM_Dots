@@ -6,3 +6,4 @@ i3lock-color
 qogir-icon-theme
 light
 ueberzugpp
+ksuperkey
