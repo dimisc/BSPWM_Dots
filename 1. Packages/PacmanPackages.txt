@@ -1,8 +1,6 @@
 alacritty
-intel-ucode
 arandr
 atril
-base-devel
 blueberry
 bluez
 bluez-tools
@@ -21,7 +19,6 @@ freerdp2
 galculator
 geany
 geany-plugins
-git
 gnome-bluetooth
 gnome-disk-utility
 gnome-keyring
