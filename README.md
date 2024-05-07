@@ -60,6 +60,8 @@ Dotfiles for BSPWM
         sudo chown -R user:user /home/user
 
         sudo systemctl enable bluetooth
+        
+        * While in a GUI Environment *
         betterlockscreen -u /home/user/Pictures/Wallpapers/Lock.jpg
 
 ## 17) Install a Login Manager (SDDM or ly for minimal)
