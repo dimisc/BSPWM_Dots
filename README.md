@@ -60,7 +60,6 @@ Dotfiles for BSPWM
         sudo chown -R user:user /home/user
 
         sudo systemctl enable bluetooth
-        sudo systemctl enable mpd (May also need to start the service)
         
         * While in a GUI Environment *
         betterlockscreen -u /home/user/Pictures/Wallpapers/Lock.jpg
