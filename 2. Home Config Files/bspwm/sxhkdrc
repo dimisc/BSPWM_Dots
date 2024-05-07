@@ -17,7 +17,7 @@ super + alt + Return
 ##---------- Rofi Launcher & Menus ----------##
 
 # Rofi App Launcher
-super + d
+alt + F1
 	rofi_launcher
 
 # Rofi Run
