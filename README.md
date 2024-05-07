@@ -72,6 +72,15 @@ Reboot
 
 You should have a fully working BSPWM installation.
 
+## IMPORTANT KEYBINDS (see .config/bspwm/sxhkdrc):
+        super + d                 Launches Rofi
+        super + q                 Quits
+        super + x                 Shutdown Menu
+        super + enter             Alacritty
+        super + Shift + f         Thunar
+        super + Shift + w         Firefox
+        super + Shift + t         Geany
+
 ## Optional:
     killall xsettingsd
     gsettings set org.gnome.desktop.interface gtk-theme Qogir-dark
