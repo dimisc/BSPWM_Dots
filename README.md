@@ -44,9 +44,9 @@ Dotfiles for BSPWM
         sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 ## 13) Copy #7 Home Hidden Files
-        cp -R BSPWM_Dots/7. Home Hidden Files/* /home/user/
+        cp -R BSPWM_Dots/7. Home Hidden Files/.[a-zA-Z0-9]* /home/user/
 
-        ** Check to see if files have copied with ls -la If not then copy one by one **
+        ** Check to see if files and folders have copied with ls -la If not then copy one by one **
 
 ## 14) Copy #8 Root config files
         sudo cp -R BSPWM_Dots/8. Root/Config/* /home/root/.config/
@@ -73,7 +73,7 @@ Reboot
 You should have a fully working BSPWM installation.
 
 ## IMPORTANT KEYBINDS (see .config/bspwm/sxhkdrc):
-        super + d                 Launches Rofi
+        super                     Launches Rofi
         super + q                 Quits
         super + x                 Shutdown Menu
         super + enter             Alacritty
