@@ -1,17 +1,17 @@
-caprine (AUR)
+caprine
 clonezilla
 cups
 discord
 easytag
 gimp
 gparted
-heroic-games-launcher-bin (AUR)
+heroic-games-launcher-bin
 hexchat
 inkscape
-keeweb-desktop-bin (AUR)
-lampe (AUR)
-localsend-bin (AUR)
-onlyoffice-bin (AUR)
+keeweb-desktop-bin
+lampe
+localsend-bin
+onlyoffice-bin
 steam
 veracrypt
 wine
