@@ -1,6 +1,9 @@
 # BSPWM_Dots
 Dotfiles for BSPWM
 
+![BSPWM](https://github.com/dimisc/BSPWM_Dots/assets/82513242/8e16a5bb-f3f7-4334-9f02-0c56ecb84d03)
+
+
 *** INSTRUCTIONS: ***
 
 ## 1)  Minimal Arch Install (Grub, Pipewire, NetworkManager. Packages: git)
