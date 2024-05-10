@@ -85,5 +85,6 @@ You should have a fully working BSPWM installation.
     killall xsettingsd
     gsettings set org.gnome.desktop.interface gtk-theme Qogir-dark
     gsettings set org.gnome.desktop.interface icon-theme Papirus
+    *** May need to kill xsettingsd prior to changing appearance settings ***
 
 Reboot
