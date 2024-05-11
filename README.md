@@ -51,8 +51,9 @@ Dotfiles for BSPWM
 
         ** Check to see if files and folders have copied with ls -la If not then copy one by one **
 
-## 14) Copy #8 Root config files
-        sudo cp -R BSPWM_Dots/8. Root/Config/* /home/root/.config/
+## 14) Copy #8 Root config files (need to log in as root)
+        mkdir /root/.config
+        cp -R BSPWM_Dots/8. Root/Config/* /root/.config/
 
 ## 15) Copy #9 Pictures (needed for wallpaper & screen lock)
         cp -R BSPWM_Dots/9. Pictures/* /home/user/Pictures/
