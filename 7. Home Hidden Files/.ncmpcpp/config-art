@@ -22,8 +22,8 @@ allow_for_physical_item_deletion = "no"
 #visualizer_output_name = "mpd_visualizer"
 #visualizer_in_stereo   = "yes"
 #visualizer_look 	   = "  "
-#visualizer_type 	   = "ellipse"
-visualizer_type 	   = "wave"
+visualizer_type 	   = "ellipse"
+#visualizer_type 	   = "wave"
 
 ### Appearance ###
 playlist_display_mode = "columns"
