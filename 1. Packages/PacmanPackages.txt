@@ -88,6 +88,7 @@ thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
 thunderbird
+timidity
 tldr
 tmux
 trash-cli
