@@ -1,4 +1,4 @@
-import = ["/home/dimitris/.config/bspwm/alacritty/colors.toml", "/home/dimitris/.config/bspwm/alacritty/fonts.toml"]
+general.import = ["/home/dimitris/.config/bspwm/alacritty/colors.toml", "/home/dimitris/.config/bspwm/alacritty/fonts.toml"]
 live_config_reload = true
 
 [cursor]
